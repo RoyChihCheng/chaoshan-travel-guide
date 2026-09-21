@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>【潮汕】極致奢享_深度遊行程規劃指南</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
+    @page {
+      size: A4 portrait;
+      margin: 14mm 12mm;
+      @bottom-right {
+        content: counter(page);
+        font-family: 'Noto Sans TC', sans-serif;
+        font-size: 8pt;
+        color: #64748b;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    body {
+      font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #1e293b;
+      background-color: #ffffff;
+      line-height: 1.5;
+      font-size: 9pt;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2, h3, h4, .serif {
+      font-family: 'Noto Serif TC', serif;
+    }
+
+    .page-break {
+      page-break-before: always;
+      break-before: page;
+    }
+
+    .no-break {
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    /* 封面頁 */
+    .cover-page {
+      height: 265mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: linear-gradient(145deg, #0a192f 0%, #1e293b 60%, #8c2d19 100%);
+      color: #ffffff;
+      padding: 30mm 20mm;
+      border-radius: 8px;
+    }
+
+    .cover-title {
+      font-size: 32pt;
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: 1px;
+      color: #f8fafc;
+      margin-bottom: 8mm;
+    }
+
+    .cover-gold {
+      color: #d4af37;
+    }
+
+    .cover-badge {
+      display: inline-block;
+      padding: 3mm 7mm;
+      background: rgba(212, 175, 55, 0.2);
+      border: 1px solid rgba(212, 175, 55, 0.5);
+      border-radius: 50px;
+      font-size: 9pt;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #fef08a;
+      margin-bottom: 8mm;
+      text-transform: uppercase;
+    }
+
+    .cover-meta {
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      padding-top: 6mm;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 4mm;
+    }
+
+    .cover-meta-item {
+      background: rgba(255, 255, 255, 0.07);
+      padding: 3.5mm;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .cover-meta-item .val {
+      font-size: 11pt;
+      font-weight: 900;
+      color: #fbbf24;
+      font-family: 'Noto Serif TC', serif;
+    }
+
+    .cover-meta-item .lbl {
+      font-size: 7pt;
+      color: #cbd5e1;
+      margin-top: 1mm;
+    }
+
+    /* 標題與裝飾 */
+    .section-header {
+      border-bottom: 2px solid #c8102e;
+      padding-bottom: 3mm;
+      margin-bottom: 5mm;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .section-title {
+      font-size: 16pt;
+      font-weight: 900;
+      color: #0f172a;
+      margin: 0;
+    }
+
+    .section-sub {
+      font-size: 7.5pt;
+      color: #64748b;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    /* 路牌色碼標籤 */
+    .sign-ew {
+      background-color: #003399;
+      color: #ffffff;
+      padding: 1.5mm 3mm;
+      border-radius: 3px;
+      font-weight: bold;
+      font-size: 7.5pt;
+      border: 1px solid #ffffff;
+      display: inline-block;
+    }
+
+    .sign-ns {
+      background-color: #007A3D;
+      color: #ffffff;
+      padding: 1.5mm 3mm;
+      border-radius: 3px;
+      font-weight: bold;
+      font-size: 7.5pt;
+      border: 1px solid #ffffff;
+      display: inline-block;
+    }
+
+    /* 行程卡片 */
+    .card {
+      border: 1px solid #e2e8f0;
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 4mm;
+      margin-bottom: 4mm;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2.5mm;
+    }
+
+    .card-time {
+      background: #fee2e2;
+      color: #991b1b;
+      padding: 1mm 2.5mm;
+      border-radius: 4px;
+      font-size: 7.5pt;
+      font-weight: 700;
+    }
+
+    .card-title {
+      font-size: 11pt;
+      font-weight: 900;
+      color: #0f172a;
+      margin: 0 0 1.5mm 0;
+    }
+
+    .nav-box {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 2.5mm;
+      font-size: 7.5pt;
+      margin-top: 2.5mm;
+      color: #334155;
+    }
+
+    .nav-box strong {
+      color: #0f172a;
+    }
+
+    .nav-row {
+      margin-bottom: 1.2mm;
+    }
+
+    .nav-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .img-box {
+      width: 100%;
+      height: 42mm;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-bottom: 2.5mm;
+      background: #e2e8f0;
+    }
+
+    .img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* 表格 */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 7.5pt;
+      margin-bottom: 4mm;
+    }
+
+    th {
+      background-color: #0a192f;
+      color: #fef08a;
+      padding: 2mm 2.5mm;
+      text-align: left;
+      font-family: 'Noto Serif TC', serif;
+      border: 1px solid #1e293b;
+    }
+
+    td {
+      padding: 2mm 2.5mm;
+      border: 1px solid #e2e8f0;
+    }
+
+    tr:nth-child(even) td {
+      background-color: #f8fafc;
+    }
+
+    /* 美食網格 */
+    .meat-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 2.5mm;
+      margin-bottom: 4mm;
+    }
+
+    .meat-item {
+      background: #0f172a;
+      color: #ffffff;
+      padding: 2.5mm 2mm;
+      border-radius: 6px;
+      text-align: center;
+      border: 1px solid #334155;
+    }
+
+    .meat-item .name {
+      font-weight: 900;
+      color: #fef08a;
+      font-size: 8.5pt;
+      font-family: 'Noto Serif TC', serif;
+    }
+
+    .meat-item .sec {
+      color: #f87171;
+      font-size: 7pt;
+      font-weight: bold;
+      margin: 1mm 0;
+    }
+
+    .meat-item .desc {
+      font-size: 6.5pt;
+      color: #cbd5e1;
+      line-height: 1.2;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4mm;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 3mm;
+    }
+
+    .btn-maps {
+      display: inline-block;
+      font-size: 7pt;
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1.5mm;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== 封面頁 ==================== -->
+  <div class="cover-page">
+    <div>
+      <div class="cover-badge">★ 2026 跨年特輯・官方實證豪華版 ★</div>
+      <div class="cover-title">
+        潮汕五天四夜<br>
+        <span class="cover-gold">極致奢享與老饕巡禮指南</span>
+      </div>
+      <p style="font-size: 11pt; color: #cbd5e1; max-width: 500px; line-height: 1.6; margin: 0;">
+        台灣直飛廈門 ➔ 廈深高鐵動車疾速暢達 ➔ 汕頭百年騎樓老埠 ➔ 南澳島蔚藍雙子燈塔 ➔ 潮州府千年古城光影
+      </p>
+    </div>
+
+    <div>
+      <div style="font-size: 8.5pt; color: #94a3b8; margin-bottom: 4mm;">
+        零折返地理動線 ✕ 首選名店與應急備案 ✕ 國標路牌雙向色碼防迷路 ✕ 5維實景圖說
+      </div>
+
+      <div class="cover-meta">
+        <div class="cover-meta-item">
+          <div class="val">5天 4夜</div>
+          <div class="lbl">12/30 抵達 - 1/3 返台</div>
+        </div>
+        <div class="cover-meta-item">
+          <div class="val">2大奢宿</div>
+          <div class="lbl">汕頭萬豪 + 潮州載陽府</div>
+        </div>
+        <div class="cover-meta-item">
+          <div class="val">12+國寶</div>
+          <div class="lbl">八合里牛肉/獅頭鵝/生醃</div>
+        </div>
+        <div class="cover-meta-item">
+          <div class="val">100%零迷路</div>
+          <div class="lbl">國標藍綠路牌實景對照</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 第 2 頁：大交通連線與路牌防迷路系統 ==================== -->
+  <div class="page-break">
+    <div class="section-header">
+      <div>
+        <div class="section-sub">TRANSIT NETWORK & WAYFINDING SYSTEM</div>
+        <h2 class="section-title">大眾交通動線與國標街道路牌解碼系統</h2>
+      </div>
+      <div style="font-size: 8pt; color: #dc2626; font-weight: bold;">零盲區換乘指南</div>
+    </div>
+
+    <!-- 台灣直飛廈門轉高鐵黃金動線 -->
+    <div class="card" style="background: #f8fafc; border-left: 4px solid #d97706;">
+      <div style="font-size: 10pt; font-weight: 900; color: #b45309; margin-bottom: 2mm; font-family: 'Noto Serif TC', serif;">
+        ✈️ 台灣 ➔ 潮汕 最速黃金三步換乘走法（直飛廈門 + 動車秒轉潮汕）
+      </div>
+      <div class="grid-3" style="font-size: 7.5pt; line-height: 1.4;">
+        <div style="background: #ffffff; padding: 2.5mm; border-radius: 4px; border: 1px solid #e2e8f0;">
+          <strong style="color: #0f172a;">STEP 01・直航班機</strong><br>
+          台灣 (松山/桃園/高雄) ➔ 廈門高崎機場 (XMN)。航程僅約 <strong>90 分鐘</strong>，免繁瑣轉機。
+        </div>
+        <div style="background: #ffffff; padding: 2.5mm; border-radius: 4px; border: 1px solid #e2e8f0;">
+          <strong style="color: #0f172a;">STEP 02・市內接駁</strong><br>
+          高崎機場搭乘<strong>廈門地鐵 1 號線（橘紅標籤）</strong>直達廈門北站，或計程車 20 分鐘（車資約 50 RMB）。
+        </div>
+        <div style="background: #ffffff; padding: 2.5mm; border-radius: 4px; border: 1px solid #e2e8f0;">
+          <strong style="color: #0f172a;">STEP 03・高鐵動車</strong><br>
+          廈門北站搭乘<strong>廈深鐵路動車 (D/G字頭)</strong>，車程僅 <strong>1小時25分</strong> 抵達「潮汕站」，專車直奔飯店！
+        </div>
+      </div>
+    </div>
+
+    <!-- 國標路牌識別法 -->
+    <div class="grid-2" style="margin-bottom: 4mm;">
+      <div class="card" style="margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2mm;">
+          <span class="sign-ew">國家標準・東西走向</span>
+          <span style="font-size: 7pt; color: #64748b;">西 ◄──► 東</span>
+        </div>
+        <div style="text-align: center; margin: 2mm 0;">
+          <div class="sign-ew" style="font-size: 10pt; padding: 2mm 6mm;">金 砂 東 路 (JINSHA EAST RD.)</div>
+        </div>
+        <div style="font-size: 7.5pt; color: #475569;">
+          <strong>辨識秘訣：</strong>凡看到<strong>「深藍底白字」</strong>，代表道路為<strong>東西走向</strong>（如金砂路、中山路、海濱路）。抬頭即知左右為南北。
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2mm;">
+          <span class="sign-ns">國家標準・南北走向</span>
+          <span style="font-size: 7pt; color: #64748b;">北 ◄──► 南</span>
+        </div>
+        <div style="text-align: center; margin: 2mm 0;">
+          <div class="sign-ns" style="font-size: 10pt; padding: 2mm 6mm;">義 安 路 (YI'AN RD.)</div>
+        </div>
+        <div style="font-size: 7.5pt; color: #475569;">
+          <strong>辨識秘訣：</strong>凡看到<strong>「深綠底白字」</strong>，代表道路為<strong>南北走向</strong>（如牌坊街太平路、義安路、東廈路）。沿路前進即為正南正北。
+        </div>
+      </div>
+    </div>
+
+    <!-- 交通接駁總表 -->
+    <table>
+      <thead>
+        <tr>
+          <th>樞紐站點</th>
+          <th>線路代碼 / 交通方式</th>
+          <th>關鍵出站指示 / 月台標籤</th>
+          <th>直達目的地與耗時</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>廈門北站 (Xiamen North)</strong></td>
+          <td><span style="color:#b91c1c; font-weight:bold;">廈深高鐵</span> D/G 動車組</td>
+          <td>候車大廳 2 樓 ➔ 認明「潮汕 / 深圳北方向」檢票口</td>
+          <td>直達「潮汕站」（約 1 小時 25 分）</td>
+        </tr>
+        <tr>
+          <td><strong>潮汕站 (Chaoshan Station)</strong></td>
+          <td><span style="color:#1d4ed8; font-weight:bold;">高鐵快線專車</span> K1 / K2</td>
+          <td>南出站口 ➔ 跟隨「高鐵快線 / 出租車搭乘區」指示牌</td>
+          <td>專車 35 分鐘直達汕頭萬豪酒店</td>
+        </tr>
+        <tr>
+          <td><strong>汕頭小公園開埠區</strong></td>
+          <td><span style="color:#047857; font-weight:bold;">老埠專線</span> 1路 / 2路 公交</td>
+          <td>認明站牌「小公園站」或「老媽宮站」，刷乘車碼上車</td>
+          <td>直達中山紀念亭與開埠陳列館</td>
+        </tr>
+        <tr>
+          <td><strong>南澳島跨海動線</strong></td>
+          <td><span style="color:#b45309; font-weight:bold;">南澳大橋</span> 專車 / 包車環島</td>
+          <td>經由萊美路 ➔ 認明「南澳大橋收費站」跨海通道</td>
+          <td>25 分鐘跨越南海直抵長山尾燈塔</td>
+        </tr>
+        <tr>
+          <td><strong>潮州古城區</strong></td>
+          <td><span style="color:#6d28d9; font-weight:bold;">古城電瓶觀光車</span></td>
+          <td>牌坊街南北入口均設有官方站點，隨招隨停</td>
+          <td>古城各景點巡遊（單次約 10-15 RMB）</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ==================== 第 3 頁：Day 1 汕頭老埠與牛肉神殿 ==================== -->
+  <div class="page-break">
+    <div class="section-header">
+      <div>
+        <div class="section-sub">DAY 01｜TUESDAY 12/30</div>
+        <h2 class="section-title">汕頭老埠騎樓巡禮 ✕ 國寶八合里牛肉火鍋</h2>
+      </div>
+      <div style="font-size: 8pt; color: #c8102e; font-weight: bold;">抵埠・漫活・舌尖震撼</div>
+    </div>
+
+    <div class="grid-2">
+      <!-- 點 1 -->
+      <div class="card no-break">
+        <div class="card-header">
+          <span class="card-time">14:00 - 15:00｜尊榮入住</span>
+          <span style="font-size: 7.5pt; color: #64748b;">海濱無敵海景</span>
+        </div>
+        <div class="card-title">汕頭萬豪酒店 (Shantou Marriott Hotel)</div>
+        <div style="font-size: 7.5pt; color: #475569; margin-bottom: 2mm;">
+          坐落於龍湖區核心，客房配備大面落地窗俯瞰海灣，奢享五星級寢具，為您洗去旅途疲憊。連住兩晚免搬遷折騰。
+        </div>
+        <div class="nav-box">
+          <div class="nav-row"><strong>🚇 接駁方式：</strong>潮汕站南出站口乘專車直達，車程約 35-40 分鐘。</div>
+          <div class="nav-row"><strong>🪧 路牌核對：</strong>認明藍牌 <span class="sign-ew">珠池路 ZHUCHI RD.</span> 與綠牌 <span class="sign-ns">海濱路 HAIBIN RD.</span></div>
+          <div class="nav-row"><strong>🏬 實體門牌：</strong>頂部醒目大字 <span style="font-family:monospace;">SHANTOU MARRIOTT HOTEL</span>。</div>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Shantou+Marriott+Hotel" class="btn-maps">📍 Google 地圖導航 ➔</a>
+      </div>
+
+      <!-- 點 2 -->
+      <div class="card no-break">
+        <div class="card-header">
+          <span class="card-time">15:30 - 17:30｜開埠歷史</span>
+          <span style="font-size: 7.5pt; color: #64748b;">巴洛克騎樓群</span>
+        </div>
+        <div class="img-box">
+          <img src="./images/shantou-small-park.jpg" alt="汕頭小公園">
+        </div>
+        <div class="card-title">汕頭小公園開埠文化街區</div>
+        <div style="font-size: 7.5pt; color: #475569; margin-bottom: 2mm;">
+          以紅色八角「中山紀念亭」為核心，安平路、國平路放射狀展開，匯聚巴洛克騎樓、老媽宮戲台與開埠陳列館。
+        </div>
+        <div class="nav-box">
+          <div class="nav-row"><strong>🚇 公交動線：</strong>老埠專線 1路/2路 至「小公園站」下車即達。</div>
+          <div class="nav-row"><strong>🪧 路牌核對：</strong>藍牌 <span class="sign-ew">安平路 ANPING RD.</span> ✕ 綠牌 <span class="sign-ns">國平路 GUOPING RD.</span></div>
+          <div class="nav-row"><strong>🍜 首選小吃：</strong>老牌老媽宮粽球（雙烹粽）/ 飄香小食店（無米粿）。</div>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Shantou+Small+Park" class="btn-maps">📍 Google 地圖導航 ➔</a>
+      </div>
+
+      <!-- 點 3 -->
+      <div class="card no-break">
+        <div class="card-header">
+          <span class="card-time">17:30 - 18:30｜落日絕景</span>
+          <span style="font-size: 7.5pt; color: #64748b;">礐石大橋晚霞</span>
+        </div>
+        <div class="card-title">西堤公園 (Xidi Park) 日落</div>
+        <div style="font-size: 7.5pt; color: #475569; margin-bottom: 2mm;">
+          昔日紅頭船出海之地。黃昏時刻，夕陽將內海灣與跨海礐石大橋染成金紅色，鋼纜與晚霞同框，極具氛圍感。
+        </div>
+        <div class="nav-box">
+          <div class="nav-row"><strong>🧭 步行動線：</strong>小公園安平路沿海平路南行 700 米即達公園北門。</div>
+          <div class="nav-row"><strong>📸 拍攝位：</strong>親水棧道盡頭，將「紅頭船雕塑」與「大橋鋼纜」一同入鏡。</div>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Shantou+Xidi+Park" class="btn-maps">📍 Google 地圖導航 ➔</a>
+      </div>
+
+      <!-- 點 4 -->
+      <div class="card no-break">
+        <div class="card-header">
+          <span class="card-time">19:00 - 21:00｜舌尖神殿</span>
+          <span style="font-size: 7.5pt; color: #c8102e; font-weight:bold;">國寶必吃首位</span>
+        </div>
+        <div class="img-box">
+          <img src="./images/beef-hotpot.jpg" alt="八合里牛肉火鍋">
+        </div>
+        <div class="card-title">八合里海記牛肉火鍋 (總店)</div>
+        <div style="font-size: 7.5pt; color: #475569; margin-bottom: 2mm;">
+          堅持當日現宰黃牛，牛骨清湯微沸燙肉。五花趾脆彈、匙柄清甜、生打牛丸爆汁，搭配特調沙茶醬，無可匹敵！
+        </div>
+        <div class="nav-box">
+          <div class="nav-row"><strong>📍 地址門牌：</strong>金平區黃崗路與坪廷東巷路口（認明黑底金字大牌）。</div>
+          <div class="nav-row"><strong>🥩 必搶部位：</strong>五花趾、匙柄、吊龍、胸口朥、生打生牛筋丸。</div>
+          <div class="nav-row"><strong>⚠️ 備案機制：</strong>若排隊超 45 分鐘，直切步行 10 分鐘之【杏花吳記牛肉】。</div>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Baheli+Haiji+Beef+Hotpot+Shantou" class="btn-maps">📍 Google 地圖導航 ➔</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 第 4 頁：Day 2 南澳海島與跨年夜 ==================== -->
+  <div class="page-break">
+    <div class="section-header">
+      <div>
+        <div class="section-sub">DAY 02｜WEDNESDAY 12/31</div>
+        <h2 class="section-title">南澳島絕美環海公路 ✕ 澄海獅頭鵝跨年宴</h2>
+      </div>
+      <div style="font-size: 8pt; color: #d97706; font-weight: bold;">跨年夜・碧海青峰・鵝王之尊</div>
+    </div>
+
+    <div class="grid-2">
+      <!-- 點 1 -->
+      <div class="card no-break">
+        <div class="card-header">
+          <span class="card-time">09:00 - 11:00｜跨海長龍</span>
+          <span style="font-size: 7.5pt; color: #64748b;">全長 11.08 公里</span>
+        </div>
+        <div class="img-box">
+          <img src="./images/nanao-bridge.jpg" alt="南澳大橋">
+        </div>
+        <div class="card-title">南澳大橋 ➔ 長山尾紅色燈塔</div>
+        <div style="font-size: 7.5pt; color: #475569; margin-bottom: 2mm;">
+          跨越南海巨龍進島，下橋第一站即是紅色復古「長山尾燈塔」，以宏偉的大橋橋身為主背景，是南澳島第一門面。
+        </div>
+        <div class="nav-box">
+          <div class="nav-row"><strong>🚗 交通指引：</strong>過南澳大橋收費站下橋右轉即抵停車場。</div>
+          <div class="nav-row"><strong>🪧 路牌核對：</strong>認明綠底白字路牌 <span class="sign-ns">環島南路 HUANDAO SOUTH RD.</span></div>
+          <div class="nav-row"><strong>📸 經典機位：</strong>海防棧道中段，利用長焦將燈塔與大橋主塔同框壓縮。</div>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Changshanwei+Lighthouse+Nanao" class="btn-maps">📍 Google 地圖導航 ➔</a>
+      </div>
+
+      <!-- 點 2 -->
+      <div class="card no-break">
+        <div class="card-header">
+          <span class="card-time">11:30 - 13:30｜海灣盛宴</span>
+          <span style="font-size: 7.5pt; color: #64748b;">愛琴海白色棧道</span>
+        </div>
+        <div class="card-title">錢澳灣燈塔 ➔ 後宅鎮本港海鮮排檔</div>
+        <div style="font-size: 7.5pt; color: #475569; margin-bottom: 2mm;">
+          純白燈塔伸入蔚藍海面，極具地中海風情。中午移師後宅鎮海濱路，享用現撈本港小管、紫菜炒飯與野生石斑魚。
+        </div>
+        <div class="nav-box">
+          <div class="nav-row"><strong>🦞 首選名店：</strong>【後江海鮮排檔】／【好客來海鮮排檔】。</div>
+          <div class="nav-row"><strong>🍲 必點招牌：</strong>南澳頭水紫菜炒飯、清蒸海膽水蛋、白灼九節蝦。</div>
+          <div class="nav-row"><strong>⚠️ 避坑提醒：</strong>點菜時於電子秤前確認活海鮮每斤單價與去水重量。</div>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Qianaowan+Lighthouse+Nanao" class="btn-maps">📍 Google 地圖導航 ➔</a>
+      </div>
+
+      <!-- 點 3 -->
+      <div class="card no-break">
+        <div class="card-header">
+          <span class="card-time">14:00 - 16:30｜懸崖絕壁</span>
+          <span style="font-size: 7.5pt; color: #64748b;">北回歸線標誌</span>
+        </div>
+        <div class="img-box">
+          <img src="./images/nanao-lighthouse.jpg" alt="三囱崖燈塔">
+        </div>
+        <div class="card-title">三囱崖雙子燈塔 ➔ 青澳灣自然之門</div>
+        <div style="font-size: 7.5pt; color: #475569; margin-bottom: 2mm;">
+          南澳最美「冰淇淋」粉紅白紋雙子燈塔，孤懸於黑色礁石峭壁。青澳灣擁有天然弧形沙灘與「自然之門」雕塑。
+        </div>
+        <div class="nav-box">
+          <div class="nav-row"><strong>🧭 導航地標：</strong>導航「三囱崖燈塔觀景台」，路邊木棧道下行 100 米。</div>
+          <div class="nav-row"><strong>🍵 海邊小憩：</strong>青澳灣沙灘咖啡館品飲南澳名產海石花或鴨屎香檸檬茶。</div>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Sancuya+Lighthouse+Nanao" class="btn-maps">📍 Google 地圖導航 ➔</a>
+      </div>
+
+      <!-- 點 4 -->
+      <div class="card no-break">
+        <div class="card-header">
+          <span class="card-time">18:30 - 21:30｜跨年夜宴</span>
+          <span style="font-size: 7.5pt; color: #c8102e; font-weight:bold;">世界鵝王之尊</span>
+        </div>
+        <div class="img-box">
+          <img src="./images/lion-head-goose.jpg" alt="澄海獅頭鵝">
+        </div>
+        <div class="card-title">澄海獅頭鵝跨年宴【東興飯店 / 潮福苑】</div>
+        <div style="font-size: 7.5pt; color: #475569; margin-bottom: 2mm;">
+          回汕頭市區享跨年夜盛宴！獅頭鵝以南洋香料老滷汁浸煮，粉肝入口如絲絨，鵝肉厚實帶汁，蒜泥白醋提鮮解膩。
+        </div>
+        <div class="nav-box">
+          <div class="nav-row"><strong>🦆 必點品項：</strong>滷水八珍拼盤（特級粉肝、鵝肉、鵝掌、鵝翼、鵝胗）。</div>
+          <div class="nav-row"><strong>👑 老饕至尊：</strong>限量「老鵝頭鵝脖」，膠質極厚，骨香濃郁。</div>
+          <div class="nav-row"><strong>🎉 迎新倒數：</strong>餐後漫步海濱長廊或時代廣場，海風中迎接 2026！</div>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Shantou+Dongxing+Restaurant+Lion+Head+Goose" class="btn-maps">📍 Google 地圖導航 ➔</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 第 5 頁：Day 3 移師潮州與光影浮橋 ==================== -->
+  <div class="page-break">
+    <div class="section-header">
+      <div>
+        <div class="section-sub">DAY 03｜THURSDAY 01/01</div>
+        <h2 class="section-title">移師潮州古城 ✕ 開元寺祈福 ✕ 廣濟橋夜間光影秀</h2>
+      </div>
+      <div style="font-size: 8pt; color: #0d9488; font-weight: bold;">元旦迎新・千年古剎・水幕光影</div>
+    </div>
+
+    <div class="grid-2">
+      <!-- 點 1 -->
+      <div class="card no-break">
+        <div class="card-header">
+          <span class="card-time">10:00 - 11:30｜移師換宿</span>
+          <span style="font-size: 7.5pt; color: #64748b;">清代古宅府邸</span>
+        </div>
+        <div class="card-title">潮州載陽府 / 韓思悅酒店 (古城名宿)</div>
+        <div style="font-size: 7.5pt; color: #475569; margin-bottom: 2mm;">
+          專車 45 分鐘順路抵達潮州古城。入住載陽府，清代潮式「駟馬拖車」傳統豪宅，金漆木雕，下樓即是牌坊街。
+        </div>
+        <div class="nav-box">
+          <div class="nav-row"><strong>🚗 接駁動線：</strong>古城禁行汽車，專車至牌坊街南門，管家電瓶車接運行李。</div>
+          <div class="nav-row"><strong>🪧 路牌核對：</strong>綠牌 <span class="sign-ns">太平路 (牌坊街) TAIPING RD.</span> ✕ 藍牌 <span class="sign-ew">載陽巷 ZAIYANG LN.</span></div>
+          <div class="nav-row"><strong>🍵 迎賓禮遇：</strong>客棧管家奉上正宗高山單樅工夫茶與開元寺腐乳餅。</div>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Zaiyang+Mansion+Chaozhou" class="btn-maps">📍 Google 地圖導航 ➔</a>
+      </div>
+
+      <!-- 點 2 -->
+      <div class="card no-break">
+        <div class="card-header">
+          <span class="card-time">12:00 - 13:00｜古城老牌</span>
+          <span style="font-size: 7.5pt; color: #64748b;">牛雜天花板</span>
+        </div>
+        <div class="card-title">鎮記老尾牛雜店 (西湖總店)</div>
+        <div style="font-size: 7.5pt; color: #475569; margin-bottom: 2mm;">
+          潮州牛雜第一招牌！現汆牛肚、牛筋、牛心，鋪在純米手工粿條上，澆上一勺滾燙牛骨湯與南薑末，香氣撲鼻。
+        </div>
+        <div class="nav-box">
+          <div class="nav-row"><strong>📍 地址門牌：</strong>湘橋區環城西路（潮州西湖斜對面，認明黃底紅字大牌）。</div>
+          <div class="nav-row"><strong>🍜 必點招牌：</strong>大碗牛雜粿條（料多蓋滿）、生滾牛肉丸清湯。</div>
+          <div class="nav-row"><strong>💡 避峰秘訣：</strong>中午排隊人多，建議提前於 11:45 前抵達入座。</div>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Zhenji+Laowei+Niuzha+Chaozhou" class="btn-maps">📍 Google 地圖導航 ➔</a>
+      </div>
+
+      <!-- 點 3 -->
+      <div class="card no-break">
+        <div class="card-header">
+          <span class="card-time">14:00 - 16:30｜名剎祈福</span>
+          <span style="font-size: 7.5pt; color: #64748b;">唐開元二十六年</span>
+        </div>
+        <div class="img-box">
+          <img src="./images/kaiyuan-temple.jpg" alt="潮州開元寺">
+        </div>
+        <div class="card-title">開元鎮國禪寺 ➔ 甲第巷明清大夫第</div>
+        <div style="font-size: 7.5pt; color: #475569; margin-bottom: 2mm;">
+          「粵東第一古剎」，大雄寶殿留存唐代木構，殿前唐代石經幢巍然矗立。隨後漫行甲第巷，欣賞潮式嵌瓷與彩繪。
+        </div>
+        <div class="nav-box">
+          <div class="nav-row"><strong>🧭 步行動線：</strong>牌坊街中段轉入開元路即達山門。</div>
+          <div class="nav-row"><strong>🪧 路牌核對：</strong>認明藍底白字路牌 <span class="sign-ew">開元路 KAIYUAN RD.</span></div>
+          <div class="nav-row"><strong>🌿 國寶古蹟：</strong>庭院兩株宋代菩提古樹，寺內免費參拜。</div>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Kaiyuan+Temple+Chaozhou" class="btn-maps">📍 Google 地圖導航 ➔</a>
+      </div>
+
+      <!-- 點 4 -->
+      <div class="card no-break">
+        <div class="card-header">
+          <span class="card-time">19:30 - 21:00｜視覺震撼</span>
+          <span style="font-size: 7.5pt; color: #6d28d9; font-weight:bold;">全息水幕光影秀</span>
+        </div>
+        <div class="img-box">
+          <img src="./images/guangji-bridge.jpg" alt="廣濟橋光影">
+        </div>
+        <div class="card-title">廣濟門城樓 ➔ 廣濟橋一江兩岸光影盛宴</div>
+        <div style="font-size: 7.5pt; color: #475569; margin-bottom: 2mm;">
+          雷射投射於湘子橋樓閣與韓江水幕，伴隨潮州大鑼鼓與名曲演繹，流光溢彩，呈現氣勢磅礴的盛唐宋明風華。
+        </div>
+        <div class="nav-box">
+          <div class="nav-row"><strong>🕒 演出場次：</strong>每晚兩場：20:00 - 20:16、21:00 - 21:16（每場 16 分鐘）。</div>
+          <div class="nav-row"><strong>📍 免費觀景：</strong>廣濟門城樓前江濱長廊觀景台，視野正對浮橋。</div>
+          <div class="nav-row"><strong>🍲 宵夜推薦：</strong>看完光影秀享用【阿榮砂鍋粥】膏蟹鮮蝦粥。</div>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Guangji+Tower+Chaozhou" class="btn-maps">📍 Google 地圖導航 ➔</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 第 6 頁：Day 4 十八梭船與韓公書香 ==================== -->
+  <div class="page-break">
+    <div class="section-header">
+      <div>
+        <div class="section-sub">DAY 04｜FRIDAY 01/02</div>
+        <h2 class="section-title">十八梭船廿四洲 ✕ 韓文公祠 ✕ 牌坊街走讀</h2>
+      </div>
+      <div style="font-size: 8pt; color: #9333ea; font-weight: bold;">古橋奇蹟・江山改姓・老字號甜湯</div>
+    </div>
+
+    <div class="grid-2">
+      <!-- 點 1 -->
+      <div class="card no-break">
+        <div class="card-header">
+          <span class="card-time">09:00 - 11:30｜世界奇觀</span>
+          <span style="font-size: 7.5pt; color: #64748b;">四大古橋之一</span>
+        </div>
+        <div class="card-title">廣濟橋（湘子橋・白天深度登橋）</div>
+        <div style="font-size: 7.5pt; color: #475569; margin-bottom: 2mm;">
+          世界第一座啟閉式浮梁橋。「十八梭船廿四洲」，上午 09:00 梭船合龍成橋，橋上樓台各異，非遺傳承人現場獻藝。
+        </div>
+        <div class="nav-box">
+          <div class="nav-row"><strong>🕒 開放時間：</strong>09:00 - 17:00（門票 20 RMB，持台胞證掃碼入閘）。</div>
+          <div class="nav-row"><strong>🏛️ 橋上非遺：</strong>古亭內潮繡、手拉朱泥壺、木雕大師現場展示。</div>
+          <div class="nav-row"><strong>🐂 傳奇文物：</strong>橋墩鎮水鉎牛雕塑（潮州童謠「一隻牛」原型）。</div>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Guangji+Bridge+Chaozhou" class="btn-maps">📍 Google 地圖導航 ➔</a>
+      </div>
+
+      <!-- 點 2 -->
+      <div class="card no-break">
+        <div class="card-header">
+          <span class="card-time">12:00 - 14:00｜文脈千秋</span>
+          <span style="font-size: 7.5pt; color: #64748b;">一片江山盡姓韓</span>
+        </div>
+        <div class="card-title">韓文公祠 (紀念韓愈刺潮)</div>
+        <div style="font-size: 7.5pt; color: #475569; margin-bottom: 2mm;">
+          穿過廣濟橋抵韓江東岸筆架山。韓愈刺潮八月，興學除鱷，江山易姓。祠內古柏蒼勁，侍郎閣俯瞰古城全貌。
+        </div>
+        <div class="nav-box">
+          <div class="nav-row"><strong>🧭 順路動線：</strong>廣濟橋東出閘口步行 3 分鐘直通正門，零折返。</div>
+          <div class="nav-row"><strong>🎫 預約指引：</strong>免門票，出示微信預約碼與證件即可入園。</div>
+          <div class="nav-row"><strong>📜 國寶碑刻：</strong>正殿蘇軾手書《潮州韓文公廟碑》巨幅石碑。</div>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Han+Wengong+Shrine+Chaozhou" class="btn-maps">📍 Google 地圖導航 ➔</a>
+      </div>
+
+      <!-- 點 3 -->
+      <div class="card no-break">
+        <div class="card-header">
+          <span class="card-time">14:30 - 17:30｜名坊走讀</span>
+          <span style="font-size: 7.5pt; color: #64748b;">全國最密牌坊群</span>
+        </div>
+        <div class="img-box">
+          <img src="./images/paifang-street.jpg" alt="牌坊街">
+        </div>
+        <div class="card-title">牌坊街 22 座石牌坊走讀 ➔ 【胡榮泉】</div>
+        <div style="font-size: 7.5pt; color: #475569; margin-bottom: 2mm;">
+          走讀太平路四朝大老坊、狀元坊等 22 座明清石坊。在百年胡榮泉品嚐「鴨母撚」甜湯與現炸脆香「春餅」。
+        </div>
+        <div class="nav-box">
+          <div class="nav-row"><strong>🍧 百年胡榮泉：</strong>必吃招牌「鴨母撚」（軟糯餡丸配銀耳白果清湯）。</div>
+          <div class="nav-row"><strong>🍵 載陽茶館：</strong>點一壺鳳凰單樅「鴨屎香」，在古厝中聽潮劇折子戲。</div>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Chaozhou+Paifang+Street" class="btn-maps">📍 Google 地圖導航 ➔</a>
+      </div>
+
+      <!-- 點 4 -->
+      <div class="card no-break">
+        <div class="card-header">
+          <span class="card-time">18:00 - 20:30｜私房潮菜</span>
+          <span style="font-size: 7.5pt; color: #c8102e; font-weight:bold;">潮汕毒藥生醃</span>
+        </div>
+        <div class="card-title">古城私房潮菜【潮膳樓】✕ 潮式生醃大賞</div>
+        <div style="font-size: 7.5pt; color: #475569; margin-bottom: 2mm;">
+          在古宅享用普寧脆皮豆腐、豆醬焗黃魚與生醃膏蟹。膏蟹紅亮如膏脂，肉質嫩如果凍，鮮甜欲罷不能。
+        </div>
+        <div class="nav-box">
+          <div class="nav-row"><strong>🦀 推薦品項：</strong>生醃膏蟹、生醃皮皮蝦、生醃血蚶。</div>
+          <div class="nav-row"><strong>💡 腸胃守則：</strong>搭配熱白粥或熱工夫茶同食，切勿空腹過量。</div>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Chaozhou+Chaoshan+Private+Kitchen" class="btn-maps">📍 Google 地圖導航 ➔</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 第 7 頁：Day 5 非遺手作與滿載歸程 ==================== -->
+  <div class="page-break">
+    <div class="section-header">
+      <div>
+        <div class="section-sub">DAY 05｜SATURDAY 01/03</div>
+        <h2 class="section-title">非遺茶韻拾珍 ✕ 廈深高鐵便捷返台</h2>
+      </div>
+      <div style="font-size: 8pt; color: #2563eb; font-weight: bold;">伴手禮採集・動車直達・圓滿收官</div>
+    </div>
+
+    <div class="grid-2">
+      <!-- 點 1 -->
+      <div class="card no-break">
+        <div class="card-header">
+          <span class="card-time">08:30 - 10:00｜晨間風味</span>
+          <span style="font-size: 7.5pt; color: #64748b;">地道古城早餐</span>
+        </div>
+        <div class="card-title">開元老牌粿汁 ➔ 傳統早市漫步</div>
+        <div style="font-size: 7.5pt; color: #475569; margin-bottom: 2mm;">
+          潮州晨間靈魂！白糯米粿浸入熱米漿，淋上陳年滷汁，鋪滿滷豬腸、滷肉、滷蛋與金黃蒜頭油，暖心又暖胃。
+        </div>
+        <div class="nav-box">
+          <div class="nav-row"><strong>📍 推薦名店：</strong>【開元老牌粿汁】（開元路與義安路口）。</div>
+          <div class="nav-row"><strong>🥟 搭配粿品：</strong>現煎無米粿（韭菜香脆）、紅桃粿（香菇蝦米餡）。</div>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Chaozhou+Guozhi+Kaiyuan+Road" class="btn-maps">📍 Google 地圖導航 ➔</a>
+      </div>
+
+      <!-- 點 2 -->
+      <div class="card no-break">
+        <div class="card-header">
+          <span class="card-time">10:00 - 11:30｜名產採擷</span>
+          <span style="font-size: 7.5pt; color: #047857; font-weight:bold;">高山正宗直選</span>
+        </div>
+        <div class="img-box">
+          <img src="./images/gongfu-tea.jpg" alt="工夫茶伴手禮">
+        </div>
+        <div class="card-title">四大國寶伴手禮終極採買</div>
+        <div style="font-size: 7.5pt; color: #475569; margin-bottom: 2mm;">
+          精選鳳凰山烏崠頂正宗「鴨屎香」與「蜜蘭香」單樅茶葉，搭配老香黃（佛手果）與開元寺腐乳餅，滿載心意。
+        </div>
+        <div class="nav-box">
+          <div class="nav-row"><strong>🍵 單樅茶要訣：</strong>現場試泡確認金黃清透、回甘持久再封裝。</div>
+          <div class="nav-row"><strong>🍋 潮州三寶：</strong>老香黃、老藥桔、黃皮豉，泡水甘潤生津。</div>
+          <div class="nav-row"><strong>🥩 生打牛丸：</strong>八合里直營店抽真空保鮮包裝，附冰袋托運。</div>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Chaozhou+Dancong+Tea+Store" class="btn-maps">📍 Google 地圖導航 ➔</a>
+      </div>
+
+      <!-- 點 3 -->
+      <div class="card no-break">
+        <div class="card-header">
+          <span class="card-time">12:30 - 15:00｜高鐵動車</span>
+          <span style="font-size: 7.5pt; color: #64748b;">便捷快速銜接</span>
+        </div>
+        <div class="card-title">潮州古城 ➔ 高鐵潮汕站 ➔ 廈門北站</div>
+        <div style="font-size: 7.5pt; color: #475569; margin-bottom: 2mm;">
+          專車 30 分鐘抵潮汕站。搭乘高鐵動車（約 1 小時 25 分）抵廈門北站，換乘地鐵或排班計程車直達高崎機場。
+        </div>
+        <div class="nav-box">
+          <div class="nav-row"><strong>🎫 台胞證通關：</strong>持卡式台胞證直接刷「人工/專用閘機」進站。</div>
+          <div class="nav-row"><strong>⏰ 登機時程：</strong>高崎機場兩岸直航班機，建議起飛前 2.5 小時抵達。</div>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Chaoshan+Railway+Station" class="btn-maps">📍 Google 地圖導航 ➔</a>
+      </div>
+
+      <!-- 點 4 -->
+      <div class="card no-break">
+        <div class="card-header">
+          <span class="card-time">17:00 - 20:30｜平安返台</span>
+          <span style="font-size: 7.5pt; color: #16a34a; font-weight:bold;">美好收官</span>
+        </div>
+        <div class="card-title">廈門高崎機場 ➔ 台灣 (桃園/松山/高雄)</div>
+        <div style="font-size: 7.5pt; color: #475569; margin-bottom: 2mm;">
+          直航僅 90 分鐘回到台灣。結束五天四夜跨年潮汕之旅，品味過的美食、漫步過的古城老街，化為最溫暖的回憶！
+        </div>
+        <div class="nav-box">
+          <div class="nav-row"><strong>🛃 檢疫紅線：</strong>切勿攜帶含肉類製品返台（真空茶葉與糕餅可申報）。</div>
+          <div class="nav-row"><strong>🌟 旅程總結：</strong>五天四夜無折返、國寶美食全制霸、心靈與味覺雙豐收！</div>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Xiamen+Gaoqi+International+Airport" class="btn-maps">📍 Google 地圖導航 ➔</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 第 8 頁：潮汕國寶美食全圖鑑與行前百科 ==================== -->
+  <div class="page-break">
+    <div class="section-header">
+      <div>
+        <div class="section-sub">THE CHAOZHOU FOOD BIBLE & ESSENTIALS</div>
+        <h2 class="section-title">潮汕美食全圖鑑 ✕ 行前必備實戰百科</h2>
+      </div>
+      <div style="font-size: 8pt; color: #c8102e; font-weight: bold;">老饕秘笈與通關須知</div>
+    </div>
+
+    <!-- 牛肉火鍋部位圖解 -->
+    <div style="margin-bottom: 3.5mm;">
+      <div style="font-size: 9.5pt; font-weight: 900; color: #991b1b; margin-bottom: 2mm; font-family: 'Noto Serif TC', serif;">
+        🥩 潮汕牛肉火鍋・六大核心部位涮燙秒數全覽
+      </div>
+      <div class="meat-grid">
+        <div class="meat-item">
+          <div class="name">脖仁</div>
+          <div class="sec">8~10秒</div>
+          <div class="desc">微動肌雪花<br>大理石油花</div>
+        </div>
+        <div class="meat-item">
+          <div class="name">吊龍</div>
+          <div class="sec">8秒</div>
+          <div class="desc">西餐肋眼<br>滑嫩肉香濃</div>
+        </div>
+        <div class="meat-item">
+          <div class="name">匙柄</div>
+          <div class="sec">8秒</div>
+          <div class="desc">肩胛肉筋<br>爽脆細滑</div>
+        </div>
+        <div class="meat-item">
+          <div class="name">五花趾</div>
+          <div class="sec">10秒</div>
+          <div class="desc">後腿腱肉<br>彈牙脆爽</div>
+        </div>
+        <div class="meat-item">
+          <div class="name">胸口朥</div>
+          <div class="sec">3~5分鐘</div>
+          <div class="desc">牛胸脆脂<br>奶香脆口</div>
+        </div>
+        <div class="meat-item">
+          <div class="name">生打牛丸</div>
+          <div class="sec">5分鐘</div>
+          <div class="desc">千錘百煉<br>爆漿多汁</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 美食三大流派簡表 -->
+    <div class="grid-3" style="margin-bottom: 4mm;">
+      <div class="card" style="margin-bottom: 0;">
+        <strong style="color: #b45309;">澄海獅頭鵝</strong>
+        <div style="font-size: 7pt; color: #475569; margin-top: 1mm;">
+          世界鵝王，老滷汁慢浸。特級粉肝嫩如絲絨，特調蒜泥白醋去油解膩。老鵝頭鵝脖為老饕終極追求。
+        </div>
+      </div>
+      <div class="card" style="margin-bottom: 0;">
+        <strong style="color: #047857;">鳳凰單樅工夫茶</strong>
+        <div style="font-size: 7pt; color: #475569; margin-top: 1mm;">
+          「鴨屎香」、「蜜蘭香」為名貴代表。高沖低斟、關公巡城、韓信點兵「三杯法」，食客雙指敲桌致謝。
+        </div>
+      </div>
+      <div class="card" style="margin-bottom: 0;">
+        <strong style="color: #b91c1c;">潮式生醃毒藥</strong>
+        <div style="font-size: 7pt; color: #475569; margin-top: 1mm;">
+          高粱酒生抽低溫生醃膏蟹、皮皮蝦與血蚶。紅膏鮮甜，配滾燙白粥冷熱交織，人間至味。
+        </div>
+      </div>
+    </div>
+
+    <!-- 行前實用百科 4 格 -->
+    <div class="grid-2">
+      <div class="card" style="margin-bottom: 0;">
+        <strong style="color: #1d4ed8;">🪪 台胞證通關規定</strong>
+        <div style="font-size: 7pt; color: #475569; margin-top: 1mm;">
+          • 卡式台胞證效期需在 6 個月以上，<strong>全面免簽注</strong>直接通關。<br>
+          • 大陸高鐵 12306 系統已全面支持台胞證實名註冊與刷卡進站。
+        </div>
+      </div>
+      <div class="card" style="margin-bottom: 0;">
+        <strong style="color: #047857;">📱 微信/支付寶綁台灣信用卡</strong>
+        <div style="font-size: 7pt; color: #475569; margin-top: 1mm;">
+          • 出發前直接綁定台灣 Visa/Mastercard，<strong>單筆 200 RMB 以下免手續費</strong>。<br>
+          • 滴滴打車、路邊攤販、便利店皆可掃碼感應支付，隨身備 300 RMB 現金備用。
+        </div>
+      </div>
+      <div class="card" style="margin-bottom: 0;">
+        <strong style="color: #d97706;">📶 漫遊網路免翻牆</strong>
+        <div style="font-size: 7pt; color: #475569; margin-top: 1mm;">
+          • 推薦台灣電信開通「原號漫遊」或中港澳漫遊 eSIM，直通 LINE、FB、IG、Google Maps。<br>
+          • 查精確市區步行動線可搭配「高德地圖」App 輔助。
+        </div>
+      </div>
+      <div class="card" style="margin-bottom: 0;">
+        <strong style="color: #7c3aed;">🧥 跨年氣候與洋蔥穿著</strong>
+        <div style="font-size: 7pt; color: #475569; margin-top: 1mm;">
+          • 12/30~1/3 平均氣溫 13℃~21℃，微涼舒適晴朗，日夜溫差約 8 度。<br>
+          • 建議洋蔥式穿法，內穿襯衫薄長袖，早晚或海邊加防風保暖外套。
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 4mm; text-align: center; font-size: 7pt; color: #94a3b8; border-top: 1px solid #e2e8f0; padding-top: 2mm;">
+      本指南由頂級 AI 旅遊顧問與全端工程師自動化排版編譯・支援 PDF 離線列印與 GitHub Pages 線上同步
+    </div>
+  </div>
+
+</body>
+</html>
