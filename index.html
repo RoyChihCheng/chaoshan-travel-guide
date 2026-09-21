@@ -34,9 +34,9 @@
   </script>
   <style>
     .glass-nav {
-      background: rgba(10, 25, 47, 0.88);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+      background: rgba(10, 25, 47, 0.90);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
     }
     .road-sign-ew {
       background-color: #003399;
@@ -60,7 +60,7 @@
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-red-500 selection:text-white">
 
   <!-- 頂部玻璃擬態導航列 -->
-  <header class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-white/10 text-white transition-all duration-300 shadow-lg">
+  <header class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-white/10 text-white transition-all duration-300 shadow-xl">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       <a href="#" class="flex items-center space-x-3 group">
         <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-red-600 to-amber-500 flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
@@ -68,25 +68,28 @@
         </div>
         <div>
           <span class="text-xl font-black font-serif tracking-wider text-amber-400 block leading-tight">潮汕・極致奢享深度遊</span>
-          <span class="text-xs text-slate-300 tracking-widest block font-sans">CHAOSHAN LUXURY TRAVEL GUIDE</span>
+          <span class="text-[10px] sm:text-xs text-slate-300 tracking-widest block font-sans">CHAOSHAN LUXURY TRAVEL GUIDE</span>
         </div>
       </a>
 
       <!-- 導航項目 -->
-      <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 text-sm font-medium">
+      <nav class="hidden xl:flex items-center space-x-1 text-sm font-medium">
         <a href="#overview" class="px-3 py-2 rounded-lg text-slate-200 hover:text-amber-400 hover:bg-white/5 transition">旅程概覽</a>
         <a href="#transit" class="px-3 py-2 rounded-lg text-slate-200 hover:text-amber-400 hover:bg-white/5 transition">大交通與路牌</a>
         <a href="#itinerary" class="px-3 py-2 rounded-lg text-slate-200 hover:text-amber-400 hover:bg-white/5 transition">5日行程矩陣</a>
-        <a href="#gourmet" class="px-3 py-2 rounded-lg text-slate-200 hover:text-amber-400 hover:bg-white/5 transition">國寶美食全圖鑑</a>
+        <a href="#shopping" class="px-3 py-2 rounded-lg text-amber-300 hover:text-amber-400 hover:bg-white/5 transition"><i class="fa-solid fa-bag-shopping mr-1"></i>逛街漫步商圈</a>
+        <a href="#gourmet" class="px-3 py-2 rounded-lg text-slate-200 hover:text-amber-400 hover:bg-white/5 transition">國寶美食圖鑑</a>
+        <a href="#dianping-backups" class="px-3 py-2 rounded-lg text-red-400 hover:text-red-300 hover:bg-white/5 transition"><i class="fa-solid fa-utensils mr-1"></i>大眾點評備選庫</a>
         <a href="#booking" class="px-3 py-2 rounded-lg text-slate-200 hover:text-amber-400 hover:bg-white/5 transition">預約直達指南</a>
         <a href="#essentials" class="px-3 py-2 rounded-lg text-slate-200 hover:text-amber-400 hover:bg-white/5 transition">行前實戰百科</a>
       </nav>
 
       <!-- PDF 下載按鈕 -->
       <div class="flex items-center space-x-3">
-        <a href="./chaoshan-travel-guide-2026.pdf" download class="inline-flex items-center space-x-2 bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white px-4 py-2 rounded-xl text-xs sm:text-sm font-bold shadow-lg shadow-red-900/30 transition transform hover:-translate-y-0.5">
+        <a href="./chaoshan-travel-guide-2026.pdf" download class="inline-flex items-center space-x-2 bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white px-3.5 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-bold shadow-lg shadow-red-900/30 transition transform hover:-translate-y-0.5">
           <i class="fa-solid fa-file-pdf text-base"></i>
-          <span>下載離線手冊 PDF</span>
+          <span class="hidden sm:inline">下載離線手冊 PDF</span>
+          <span class="sm:hidden">PDF 手冊</span>
         </a>
       </div>
     </div>
@@ -94,7 +97,6 @@
 
   <!-- 主視覺英雄區 (Hero Section) -->
   <section class="relative pt-32 pb-24 lg:pt-44 lg:pb-36 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900 text-white overflow-hidden">
-    <!-- 背景裝飾 -->
     <div class="absolute inset-0 opacity-25 mix-blend-overlay pointer-events-none bg-[radial-gradient(#d4af37_1px,transparent_1px)] [background-size:24px_24px]"></div>
     <div class="absolute -top-40 -right-40 w-96 h-96 bg-red-600/20 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute bottom-0 -left-40 w-96 h-96 bg-amber-500/15 rounded-full blur-3xl pointer-events-none"></div>
@@ -102,7 +104,7 @@
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-white/10 border border-amber-400/30 backdrop-blur-md mb-6 animate-pulse">
         <span class="w-2 h-2 rounded-full bg-amber-400"></span>
-        <span class="text-xs sm:text-sm font-semibold text-amber-300 tracking-wider uppercase">2026 跨年特輯・極致慢活自由行方案</span>
+        <span class="text-xs sm:text-sm font-semibold text-amber-300 tracking-wider uppercase">2026 跨年特輯・大眾點評必吃榜全收錄・極致深度自由行</span>
       </div>
 
       <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black font-serif tracking-tight leading-tight sm:leading-none mb-6">
@@ -112,7 +114,7 @@
 
       <p class="max-w-3xl mx-auto text-base sm:text-xl text-slate-300 leading-relaxed mb-10 font-normal">
         台灣直飛廈門 ➔ 轉乘高鐵動車疾速抵達 ➔ 汕頭百年騎樓老埠 ➔ 南澳島蔚藍風車燈塔 ➔ 潮州府千年古城光影。<br class="hidden sm:inline">
-        嚴選頂級海景奢旅與古城名宿，無縫銜接極品牛肉火鍋、獅頭鵝、生醃與工夫茶神級饗宴！
+        嚴選頂級海景奢旅與古城名宿，整合 25+ 家大眾點評必吃榜與老字號備選名單、五大熱門逛街夜市商圈，打造 100% 零踩雷旅行指南！
       </p>
 
       <!-- 核心特色標籤 -->
@@ -126,12 +128,12 @@
           <div class="text-xs text-slate-300">汕頭萬豪酒店<br>潮州載陽府奢享客棧</div>
         </div>
         <div class="bg-white/5 border border-white/10 p-4 rounded-2xl backdrop-blur-sm">
-          <div class="text-amber-400 text-2xl font-black mb-1 font-serif">12+ 國寶美食</div>
-          <div class="text-xs text-slate-300">八合里牛肉、澄海獅頭鵝<br>潮式生醃、鳳凰單樅茶</div>
+          <div class="text-amber-400 text-2xl font-black mb-1 font-serif">25+ 名店備選</div>
+          <div class="text-xs text-slate-300">大眾點評必吃榜/黑珍珠<br>排長隊秒速無縫切換</div>
         </div>
         <div class="bg-white/5 border border-white/10 p-4 rounded-2xl backdrop-blur-sm">
-          <div class="text-amber-400 text-2xl font-black mb-1 font-serif">5 維實景導航</div>
-          <div class="text-xs text-slate-300">雙向國標路牌色彩識別<br>一鍵 Google 地圖直連</div>
+          <div class="text-amber-400 text-2xl font-black mb-1 font-serif">5 大漫步商圈</div>
+          <div class="text-xs text-slate-300">小公園、龍眼路、萬象城<br>牌坊街西馬路、南澳後宅</div>
         </div>
       </div>
     </div>
@@ -333,13 +335,191 @@
     </div>
   </section>
 
+  <!-- 5大必逛漫步與購物商圈專題 (Shopping & Strolling Hubs) -->
+  <section id="shopping" class="py-20 bg-amber-50/40 border-b border-amber-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amber-100 border border-amber-300 text-amber-800 text-xs font-bold mb-3">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span>EXPLORE & SHOP LOCAL</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-black font-serif text-slate-900">潮汕五大逛街漫步與特色商圈走讀指南</h2>
+        <p class="mt-3 text-slate-600 max-w-2xl mx-auto">精選歷史騎樓、文創手作街、年輕人深夜夜市與高端購物商場，讓慢步、淘寶、品茶與掃街一次滿足！</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- 商圈 1: 小公園與鎮邦路 -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between group hover:shadow-md transition">
+          <div>
+            <div class="relative h-48 rounded-2xl overflow-hidden mb-4 bg-slate-200">
+              <img src="./images/zhenbang-road.jpg" alt="汕頭鎮邦路美食街" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <div class="absolute bottom-2 left-2 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded text-[11px] text-white">
+                實景：鎮邦路美食街霓虹店招與騎樓群
+              </div>
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-red-100 text-red-700">歷史文化 ✕ 非遺美食街</span>
+              <span class="text-xs text-slate-400">汕頭市金平區</span>
+            </div>
+            <h4 class="text-xl font-bold font-serif text-slate-900 mb-2">小公園騎樓商圈 ✕ 鎮邦路美食街</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              以中山紀念亭為圓心，放射狀展開的安平路、國平路聚集了老牌金銀首飾、南洋參茸海味、潮繡手作行。緊鄰的<strong>鎮邦路美食街</strong>由政府整合數十家潮汕老字號，夜間復古霓虹閃爍，極具氛圍。
+            </p>
+            <div class="bg-slate-50 p-3 rounded-xl text-xs space-y-1 text-slate-700 mb-4">
+              <div><strong>🛍️ 必逛推薦：</strong>汕頭郵政總局舊址文創店、老字號南生貿易大樓、飄香小食店。</div>
+              <div><strong>🪧 路牌對照：</strong><span class="road-sign-ew px-1.5 py-0.2 rounded text-[10px]">鎮邦路 ZHENBANG RD.</span></div>
+            </div>
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Zhenbang+Road+Food+Street+Shantou" target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800">
+            📍 Google 地圖導航 ➔
+          </a>
+        </div>
+
+        <!-- 商圈 2: 龍眼南路夜市街區 -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between group hover:shadow-md transition">
+          <div>
+            <div class="relative h-48 rounded-2xl overflow-hidden mb-4 bg-slate-200">
+              <img src="./images/longyan-road.jpg" alt="汕頭龍眼南路" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <div class="absolute bottom-2 left-2 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded text-[11px] text-white">
+                實景：龍眼南路深夜排隊名店與燈火
+              </div>
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-800">在地老饕 ✕ 深夜掃街聖地</span>
+              <span class="text-xs text-slate-400">汕頭市金平區</span>
+            </div>
+            <h4 class="text-xl font-bold font-serif text-slate-900 mb-2">龍眼南路美食步行街</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              汕頭在地青年最熱愛的宵夜掃街第一街！整條街延綿數百公尺，匯集最地道的小吃攤：現點現炸金黃普寧豆乾、反沙芋頭番薯、十二中特濃草莓冰、龍眼豆花與金二生醃。
+            </p>
+            <div class="bg-slate-50 p-3 rounded-xl text-xs space-y-1 text-slate-700 mb-4">
+              <div><strong>🍢 必吃名攤：</strong>十二中草莓冰、普寧豆腐西施、小吳腸粉、老牌反沙芋。</div>
+              <div><strong>🪧 路牌對照：</strong><span class="road-sign-ns px-1.5 py-0.2 rounded text-[10px]">龍眼南路 LONGYAN SOUTH RD.</span></div>
+            </div>
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Longyan+South+Road+Shantou" target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800">
+            📍 Google 地圖導航 ➔
+          </a>
+        </div>
+
+        <!-- 商圈 3: 萬象城與時代廣場 -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between group hover:shadow-md transition">
+          <div>
+            <div class="relative h-48 rounded-2xl overflow-hidden mb-4 bg-slate-200">
+              <img src="./images/mixc-shantou.jpg" alt="汕頭萬象城" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <div class="absolute bottom-2 left-2 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded text-[11px] text-white">
+                實景：粵東最高端奢華購物中心萬象城
+              </div>
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-100 text-blue-800">高端購物 ✕ 黑珍珠潮菜聚落</span>
+              <span class="text-xs text-slate-400">汕頭市龍湖區</span>
+            </div>
+            <h4 class="text-xl font-bold font-serif text-slate-900 mb-2">萬象城 (The MixC) ✕ 時代廣場</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              粵東面積最大、品牌最齊全的高端購物殿堂。雲集國際精品、潮流品牌與頂級黑珍珠餐飲，引進了「日日香鵝肉飯店萬象旗艦店」、茶飲新寵、西西弗書店與潮汕非遺選品店。
+            </p>
+            <div class="bg-slate-50 p-3 rounded-xl text-xs space-y-1 text-slate-700 mb-4">
+              <div><strong>☕ 精品茶飲：</strong>喜茶、奈雪、茉莉奶白、茶理宜世、潮汕本地單樅特調。</div>
+              <div><strong>🪧 路牌對照：</strong><span class="road-sign-ew px-1.5 py-0.2 rounded text-[10px]">金砂東路 JINSHA EAST RD.</span></div>
+            </div>
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=The+MixC+Shantou" target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800">
+            📍 Google 地圖導航 ➔
+          </a>
+        </div>
+
+        <!-- 商圈 4: 潮州牌坊街與西馬路 -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between group hover:shadow-md transition">
+          <div>
+            <div class="relative h-48 rounded-2xl overflow-hidden mb-4 bg-slate-200">
+              <img src="./images/west-horse-road.jpg" alt="潮州西馬路" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <div class="absolute bottom-2 left-2 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded text-[11px] text-white">
+                實景：潮州西馬路傳統手作坊與老字號街景
+              </div>
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-purple-100 text-purple-800">千年非遺 ✕ 百年手作手信</span>
+              <span class="text-xs text-slate-400">潮州市湘橋區</span>
+            </div>
+            <h4 class="text-xl font-bold font-serif text-slate-900 mb-2">牌坊街 ✕ 西馬路古街</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              若說牌坊街是潮州文化的大客廳，<strong>西馬路</strong>就是最接地氣的市井百寶箱！整條西馬路保留著原汁原味的清末民初風貌，雲集古法現炸厚記春餅、現包肖米、筍粿、手拉朱泥壺大師工作室與老字號佛手老香黃專門店。
+            </p>
+            <div class="bg-slate-50 p-3 rounded-xl text-xs space-y-1 text-slate-700 mb-4">
+              <div><strong>🏺 工藝淘寶：</strong>國家級非遺手拉朱泥壺、潮繡壁掛、手作烏木雕刻。</div>
+              <div><strong>🪧 路牌對照：</strong><span class="road-sign-ew px-1.5 py-0.2 rounded text-[10px]">西馬路 XIMA RD.</span></div>
+            </div>
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Xima+Road+Chaozhou" target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800">
+            📍 Google 地圖導航 ➔
+          </a>
+        </div>
+
+        <!-- 商圈 5: 南澳島後宅海濱路 -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between group hover:shadow-md transition">
+          <div>
+            <div class="relative h-48 rounded-2xl overflow-hidden mb-4 bg-slate-200">
+              <img src="./images/nanao-lighthouse.jpg" alt="南澳後宅海濱" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <div class="absolute bottom-2 left-2 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded text-[11px] text-white">
+                實景：南澳後宅海灣休閒海風棧道
+              </div>
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-teal-100 text-teal-800">海風漫步 ✕ 漁港乾貨特產</span>
+              <span class="text-xs text-slate-400">汕頭市南澳縣</span>
+            </div>
+            <h4 class="text-xl font-bold font-serif text-slate-900 mb-2">後宅鎮海濱路海風街</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              南澳島政治經濟文化核心，傍晚落日時分沿著海濱長廊散步吹海風，欣賞海面點點漁火。街旁排列著整齊的南澳水產乾貨市場，是採買正宗「南澳頭水紫菜」、野生烤魷魚絲與蝦米的最佳去處。
+            </p>
+            <div class="bg-slate-50 p-3 rounded-xl text-xs space-y-1 text-slate-700 mb-4">
+              <div><strong>🦀 伴手採買：</strong>南澳頭水紫菜（真空包裝）、特產魚膠、乾貝。</div>
+              <div><strong>🪧 路牌對照：</strong><span class="road-sign-ew px-1.5 py-0.2 rounded text-[10px]">海濱路 HAIBIN RD.</span></div>
+            </div>
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Houzhai+Haibin+Road+Nanao" target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800">
+            📍 Google 地圖導航 ➔
+          </a>
+        </div>
+
+        <!-- 商圈 6: 甲第巷與古城十巷群 -->
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between group hover:shadow-md transition">
+          <div>
+            <div class="relative h-48 rounded-2xl overflow-hidden mb-4 bg-slate-200">
+              <img src="./images/paifang-street.jpg" alt="甲第巷古巷" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <div class="absolute bottom-2 left-2 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded text-[11px] text-white">
+                實景：甲第巷青石板路與資政第大夫第
+              </div>
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-indigo-100 text-indigo-800">豪門府邸 ✕ 慢調文創茶室</span>
+              <span class="text-xs text-slate-400">潮州市湘橋區</span>
+            </div>
+            <h4 class="text-xl font-bold font-serif text-slate-900 mb-2">甲第巷與十巷探幽</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              「京華帝王府，潮州百姓家。」甲第巷、猷巷、灶巷是昔日潮州官宦世家聚居之地，集中了數十座「駟馬拖車」、「四點金」明清豪宅。如今巷弄裡隱藏著許多靜謐的私房工夫茶館、手作陶藝室與獨立文創空間。
+            </p>
+            <div class="bg-slate-50 p-3 rounded-xl text-xs space-y-1 text-slate-700 mb-4">
+              <div><strong>🍵 漫步亮點：</strong>資政第木雕門匾、古宅天井工夫茶、老井歲月痕跡。</div>
+              <div><strong>🪧 路牌對照：</strong><span class="road-sign-ew px-1.5 py-0.2 rounded text-[10px]">甲第巷 JIADI LN.</span></div>
+            </div>
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Jiadi+Lane+Chaozhou" target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800">
+            📍 Google 地圖導航 ➔
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- 5日極致行程矩陣 (Itinerary Section) -->
   <section id="itinerary" class="py-20 bg-slate-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12">
         <h2 class="text-xs sm:text-sm font-bold text-red-600 tracking-widest uppercase mb-2">5-Day Field Navigation Matrix</h2>
         <h3 class="text-3xl sm:text-4xl font-black font-serif text-slate-900">五天四夜極致自由行・每日實戰行程</h3>
-        <p class="mt-3 text-slate-600 max-w-2xl mx-auto">每個行程點皆配備「5維實景導航卡、精確 Google Maps 導航、首選名店與應急備案機制」。</p>
+        <p class="mt-3 text-slate-600 max-w-2xl mx-auto">每個行程點皆配備「5維實景導航卡、精確 Google Maps 導航、首選名店與大眾點評超強應急備案機制」。</p>
 
         <!-- 天數篩選膠囊按鈕 -->
         <div class="mt-8 flex flex-wrap items-center justify-center gap-2" id="day-filter-buttons">
@@ -364,8 +544,8 @@
               <span class="text-2xl font-serif leading-none">01</span>
             </div>
             <div>
-              <div class="text-xs font-bold text-red-600 tracking-wider uppercase">12月30日 週二・跨海抵埠・開埠老街慢活・牛肉火鍋之巔</div>
-              <h3 class="text-2xl sm:text-3xl font-black font-serif text-slate-900">汕頭老埠騎樓巡禮 ✕ 國寶八合里牛肉火鍋</h3>
+              <div class="text-xs font-bold text-red-600 tracking-wider uppercase">12月30日 週二・跨海抵埠・開埠老街漫活・牛肉火鍋之巔・夜市初探</div>
+              <h3 class="text-2xl sm:text-3xl font-black font-serif text-slate-900">汕頭老埠騎樓巡禮 ✕ 八合里牛肉火鍋神殿 ✕ 龍眼路深夜掃街</h3>
             </div>
           </div>
 
@@ -383,13 +563,12 @@
                   座落於汕頭市龍湖區珠池路核心樞紐，坐擁開闊內海灣景致，客房配備高規格全景落地窗與頂級寢具，為您洗去旅途奔波疲憊。
                 </p>
 
-                <!-- 導航卡 -->
                 <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-xs space-y-2.5 mb-6">
                   <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-diamond-turn-right text-red-500 mr-2"></i>交通與實戰辨識卡：</div>
                   <div><strong class="text-slate-700">🚇 接駁方式：</strong>高鐵潮汕站南出站口搭乘專車直達，車程約 35-40 分鐘。</div>
                   <div><strong class="text-slate-700">🪧 現場路牌核對：</strong>認明東西向藍色路牌 <span class="road-sign-ew px-2 py-0.5 rounded text-[10px]">珠池路 ZHUCHI RD.</span> 與 <span class="road-sign-ns px-2 py-0.5 rounded text-[10px]">海濱路 HAIBIN RD.</span></div>
                   <div><strong class="text-slate-700">🏬 實體建築標誌：</strong>大樓正面頂部清晰醒目英文標誌 <span class="font-mono bg-slate-200 px-1.5 py-0.5 rounded">SHANTOU MARRIOTT HOTEL</span>。</div>
-                  <div><strong class="text-slate-700">🧭 步行動線提示：</strong>禮賓部提供快速尊享辦理入住服務，行李直送客房。</div>
+                  <div><strong class="text-slate-700">🧭 備選住宿：</strong>若萬豪滿房，首選備案為同在海濱路的<strong>【汕頭君華海逸酒店 (Regal)】</strong>，同樣坐擁一線海景。</div>
                 </div>
               </div>
 
@@ -415,23 +594,22 @@
                     實景識別：小公園中山紀念亭與放射狀騎樓老街
                   </div>
                 </div>
-                <h4 class="text-xl font-bold font-serif text-slate-900 mb-2">汕頭小公園開埠文化街區</h4>
+                <h4 class="text-xl font-bold font-serif text-slate-900 mb-2">汕頭小公園開埠街區 ➔ 鎮邦路美食街</h4>
                 <p class="text-sm text-slate-600 mb-6 leading-relaxed">
-                  20 世紀初中國最大開埠區之一，以紅色八角「中山紀念亭」為核心，安平路、國平路呈放射狀向外延伸，匯聚中西合璧的巴洛克風情騎樓群、老媽宮戲台與開埠陳列館。
+                  20 世紀初中國最大開埠區之一，以紅色八角「中山紀念亭」為核心，安平路、國平路呈放射狀向外延伸，匯聚巴洛克風情騎樓群、老媽宮戲台與鎮邦路美食街。
                 </p>
 
-                <!-- 導航卡 -->
                 <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-xs space-y-2.5 mb-6">
-                  <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-diamond-turn-right text-red-500 mr-2"></i>交通與實戰辨識卡：</div>
-                  <div><strong class="text-slate-700">🚇 公交路線：</strong>搭乘老埠專線 1路 / 2路 至「小公園站」下車即達。</div>
+                  <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-diamond-turn-right text-red-500 mr-2"></i>交通與小吃備選清單：</div>
+                  <div><strong class="text-slate-700">🚇 公交路線：</strong>老埠專線 1路 / 2路 至「小公園站」下車即達。</div>
                   <div><strong class="text-slate-700">🪧 現場路牌核對：</strong>認明東西向藍牌 <span class="road-sign-ew px-2 py-0.5 rounded text-[10px]">安平路 ANPING RD.</span> 與南北向綠牌 <span class="road-sign-ns px-2 py-0.5 rounded text-[10px]">國平路 GUOPING RD.</span></div>
-                  <div><strong class="text-slate-700">🏬 標誌性建築：</strong>抬頭認明安平路 1 號「南生貿易公司（大清郵政舊址旁）」老字號大樓。</div>
-                  <div><strong class="text-slate-700">🧭 步行避坑：</strong>下午 16:00 陽光穿透騎樓廊柱，為全日最佳街拍時間，老媽宮戲台對面品嚐「老媽宮粽球」（雙烹粽）。</div>
+                  <div><strong class="text-slate-700">🍜 首選小吃：</strong>【老牌老媽宮粽球】（雙烹粽，甜鹹雙拼）、【飄香小食店】（水晶無米粿、紅桃粿）。</div>
+                  <div><strong class="text-slate-700">🥈 大眾點評備選：</strong>【老牌福合溝無米粿甜湯】（五果湯、海石花）、【田記豬血湯】（平東一街老店）。</div>
                 </div>
               </div>
 
               <div class="flex items-center justify-between pt-4 border-t border-slate-100">
-                <span class="text-xs text-amber-700 font-medium"><i class="fa-solid fa-utensils mr-1"></i> 首選小吃：老媽宮粽球 / 飄香小食店</span>
+                <span class="text-xs text-amber-700 font-medium"><i class="fa-solid fa-utensils mr-1"></i> 多家老字號齊聚鎮邦路</span>
                 <a href="https://www.google.com/maps/search/?api=1&query=Shantou+Small+Park" target="_blank" class="inline-flex items-center space-x-1.5 text-xs font-bold text-blue-600 hover:text-blue-800 transition">
                   <i class="fa-solid fa-location-dot"></i>
                   <span>一鍵 Google 地圖導航</span>
@@ -451,7 +629,6 @@
                   位於小公園步行 10 分鐘處的韓江匯海口，曾是潮汕僑民搭乘紅頭船遠渡重洋的出發地。黃昏時刻，夕陽染紅內海灣與橫跨海上的「礐石大橋」，景色極具電影感。
                 </p>
 
-                <!-- 導航卡 -->
                 <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-xs space-y-2.5 mb-6">
                   <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-diamond-turn-right text-red-500 mr-2"></i>交通與實戰辨識卡：</div>
                   <div><strong class="text-slate-700">🧭 步行動線：</strong>從小公園安平路沿海平路南行 700 公尺即抵西堤公園北門。</div>
@@ -469,7 +646,7 @@
               </div>
             </div>
 
-            <!-- 點 4: 國寶牛肉火鍋之巔 -->
+            <!-- 點 4: 國寶牛肉火鍋之巔與大眾點評備選 -->
             <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200/80 flex flex-col justify-between">
               <div>
                 <div class="flex items-center justify-between mb-4">
@@ -484,23 +661,56 @@
                 </div>
                 <h4 class="text-xl font-bold font-serif text-slate-900 mb-2">八合里海記牛肉火鍋 (總店)</h4>
                 <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                  潮汕牛肉火鍋的傳奇起源！堅持「一頭牛只取 37% 頂級部位」，透明櫥窗前切肉師傅手起刀落，溫體牛肉在清甜牛骨高湯中「三起三落」涮燙 8-10 秒，鮮嫩爆汁。
+                  潮汕牛肉火鍋的傳奇起源！堅持「一頭牛只取 37% 頂級部位」，溫體牛肉在清甜牛骨高湯中「三起三落」涮燙 8-10 秒，鮮嫩爆汁。
                 </p>
 
-                <!-- 導航卡 -->
                 <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-xs space-y-2.5 mb-6">
-                  <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-diamond-turn-right text-red-500 mr-2"></i>交通與老饕指南：</div>
-                  <div><strong class="text-slate-700">📍 地址門牌：</strong>金平區黃崗路與坪廷東巷交匯處（認明「八合里海記」黑底金字大招牌）。</div>
-                  <div><strong class="text-slate-700">🥩 必點極品部位：</strong>五花趾（10秒脆彈）、匙柄（8秒鮮甜嫩滑）、吊龍（肥瘦相間）、胸口朥（越嚼越香）、生打牛筋丸。</div>
-                  <div><strong class="text-slate-700">⚠️ 應急備案機制：</strong>若總店排隊超過 45 分鐘，立即切換至步行 10 分鐘之<strong>【杏花吳記牛肉火鍋】</strong>或【海銀海記】，肉質同屬當日屠宰第一梯隊。</div>
+                  <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-fire text-red-500 mr-2"></i>大眾點評老饕備選名單（超強應急機制）：</div>
+                  <div><strong class="text-slate-700">👑 首選旗艦：</strong>【八合里海記牛肉火鍋 (黃崗總店)】（大眾點評必吃榜，下午 16:30 線上搶號）。</div>
+                  <div><strong class="text-slate-700">🥈 備選 1 (黑馬封神)：</strong>【杏花吳記牛肉火鍋】（金平區杏花西路，大眾點評排隊王，刀工極致，五花趾、匙柄極品）。</div>
+                  <div><strong class="text-slate-700">🥉 備選 2 (百年口碑)：</strong>【福合埕牛肉丸 (金平福平老店)】（在地阿公阿嬤最愛，生打牛肉丸多汁彈牙）。</div>
+                  <div><strong class="text-slate-700">🏅 備選 3 (品質穩定)：</strong>【陳記順和牛肉火鍋 (韓江路店)】或【海銀海記】（分店多免排長隊）。</div>
                 </div>
               </div>
 
               <div class="flex items-center justify-between pt-4 border-t border-slate-100">
-                <span class="text-xs text-red-600 font-bold"><i class="fa-solid fa-fire mr-1"></i> 建議提前大眾點評線上取號</span>
+                <span class="text-xs text-red-600 font-bold"><i class="fa-solid fa-mobile-screen mr-1"></i> 大眾點評 App 線上取號</span>
                 <a href="https://www.google.com/maps/search/?api=1&query=Baheli+Haiji+Beef+Hotpot+Shantou" target="_blank" class="inline-flex items-center space-x-1.5 text-xs font-bold text-blue-600 hover:text-blue-800 transition">
                   <i class="fa-solid fa-location-dot"></i>
                   <span>一鍵 Google 地圖導航</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- 點 5: 宵夜掃街專題：龍眼南路與生醃夜粥 -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200/80 flex flex-col justify-between lg:col-span-2">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="px-3 py-1 rounded-full text-xs font-bold bg-indigo-100 text-indigo-800">21:30 - 23:30｜深夜食堂</span>
+                  <span class="text-xs text-slate-400 font-sans">潮汕打冷 ✕ 生醃毒藥</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                  <div class="md:col-span-1 h-44 rounded-2xl overflow-hidden bg-slate-200">
+                    <img src="./images/longyan-road.jpg" alt="龍眼路夜市" class="w-full h-full object-cover">
+                  </div>
+                  <div class="md:col-span-2">
+                    <h4 class="text-xl font-bold font-serif text-slate-900 mb-2">龍眼南路深夜掃街 ✕ 長平老姿娘夜粥</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-3">
+                      潮汕人的夜晚才剛開始！從八合里步行或打車至「龍眼南路」掃街，品嚐十二中草莓冰與現煎金黃豆乾。隨後移師「老姿娘夜粥」，上百種生醃膏蟹、生醃皮皮蝦、滷水粉肝與魚飯一字排開，搭配滾燙番薯白粥，過癮至極。
+                    </p>
+                    <div class="bg-slate-50 rounded-xl p-3 text-xs space-y-1 text-slate-700">
+                      <div><strong>👑 首選夜粥：</strong>【長平老姿娘夜粥】（長平路老字號，通宵營業）。</div>
+                      <div><strong>🥈 備選 1 (黑珍珠一鑽)：</strong>【富苑飲食】（朝陽莊北區，潮汕打冷天花板，隆江豬腳、生醃血蚶、巴浪魚飯）。</div>
+                      <div><strong>🥉 備選 2 (必吃榜常客)：</strong>【桂園白粥】（長平路老店，海鮮打冷種類極多，性價比高）。</div>
+                      <div><strong>🦀 生醃專門店：</strong>【瑞嬌嫲嫲潮汕生醃】或【金二夜市生醃】（龍眼南路，三目蟹、生醃大蝦）。</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between pt-3 border-t border-slate-100">
+                <span class="text-xs text-slate-500"><i class="fa-solid fa-moon mr-1"></i> 營業至凌晨 02:00</span>
+                <a href="https://www.google.com/maps/search/?api=1&query=Laoziniang+Porridge+Shantou" target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800">
+                  📍 Google 地圖導航 ➔
                 </a>
               </div>
             </div>
@@ -516,8 +726,8 @@
               <span class="text-2xl font-serif leading-none">02</span>
             </div>
             <div>
-              <div class="text-xs font-bold text-amber-600 tracking-wider uppercase">12月31日 週三・跨年夜・碧海青峰・環島燈塔巡禮・跨年夜宴</div>
-              <h3 class="text-2xl sm:text-3xl font-black font-serif text-slate-900">南澳島絕美環海公路 ✕ 澄海獅頭鵝跨年宴</h3>
+              <div class="text-xs font-bold text-amber-600 tracking-wider uppercase">12月31日 週三・跨年夜・碧海青峰・環島燈塔巡禮・跨年獅頭鵝盛宴</div>
+              <h3 class="text-2xl sm:text-3xl font-black font-serif text-slate-900">南澳島絕美環海公路 ✕ 澄海獅頭鵝跨年宴 ✕ 時代廣場迎新</h3>
             </div>
           </div>
 
@@ -541,7 +751,6 @@
                   專車經由壯闊的跨海巨龍「南澳大橋」進島。下橋第一站即是「長山尾燈塔」，磚紅色英倫復古燈塔矗立於海堤盡頭，以巨型大橋橋桁為背景，是南澳標誌性迎賓封面。
                 </p>
 
-                <!-- 導航卡 -->
                 <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-xs space-y-2.5 mb-6">
                   <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-diamond-turn-right text-red-500 mr-2"></i>交通與拍攝實戰卡：</div>
                   <div><strong class="text-slate-700">🚗 自駕/專車：</strong>過南澳大橋收費站後下橋右轉進入長山尾停車場。</div>
@@ -559,24 +768,24 @@
               </div>
             </div>
 
-            <!-- 點 2: 錢澳灣燈塔與後宅鎮午餐 -->
+            <!-- 點 2: 錢澳灣燈塔與後宅鎮海鮮排檔備選群 -->
             <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200/80 flex flex-col justify-between">
               <div>
                 <div class="flex items-center justify-between mb-4">
                   <span class="px-3 py-1 rounded-full text-xs font-bold bg-teal-100 text-teal-800">11:30 - 13:30｜海風午宴</span>
                   <span class="text-xs text-slate-400 font-sans">浪漫白色棧道</span>
                 </div>
-                <h4 class="text-xl font-bold font-serif text-slate-900 mb-2">錢澳灣燈塔 ➔ 後宅鎮本港海鮮盛宴</h4>
+                <h4 class="text-xl font-bold font-serif text-slate-900 mb-2">錢澳灣燈塔 ➔ 後宅鎮本港海鮮排檔</h4>
                 <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                  純白色燈塔座落於礁石海灣中，由一段伸向海面的木質棧道串聯，宛如置身愛琴海。中午移師南澳島縣城「後宅鎮」，享用現撈白灼本港小管、清蒸海膽水蛋與紫菜炒飯。
+                  純白色燈塔座落於礁石海灣中，由一段伸向海面的木質棧道串聯，宛如置身愛琴海。中午移師後宅鎮海濱路享用活海鮮。
                 </p>
 
-                <!-- 導航卡 -->
                 <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-xs space-y-2.5 mb-6">
-                  <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-diamond-turn-right text-red-500 mr-2"></i>交通與餐廳推薦：</div>
-                  <div><strong class="text-slate-700">🦞 首選名店：</strong>【後江排檔】（後宅鎮海濱路）／【好客來海鮮排檔】。</div>
-                  <div><strong class="text-slate-700">🍲 必點招牌：</strong>南澳頭水紫菜炒飯、蔥薑炒花蟹、白灼九節蝦、清蒸野生石斑。</div>
-                  <div><strong class="text-slate-700">⚠️ 避坑提醒：</strong>點海鮮時務必於電子秤前確認活海鮮單價與去水重量，透明放心。</div>
+                  <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-fish text-teal-600 mr-2"></i>大眾點評南澳島海鮮排檔備選：</div>
+                  <div><strong class="text-slate-700">👑 首選推薦：</strong>【後江排檔】（後宅鎮海濱路，在地老排檔，頭水紫菜炒飯、清蒸本港鮮魚）。</div>
+                  <div><strong class="text-slate-700">🥈 備選 1 (必吃推薦)：</strong>【好客來海鮮排檔】（後宅鎮，大眾點評高分口碑，白灼小管、椒鹽皮皮蝦）。</div>
+                  <div><strong class="text-slate-700">🥉 備選 2 (明碼標價)：</strong>【聚香海鮮大排檔】（海濱路沿線，活鮮現撈秤重，蔥薑炒花蟹、海膽蒸蛋）。</div>
+                  <div><strong class="text-slate-700">🏅 備選 3 (海景視野)：</strong>【黃金海岸海鮮樓】（邊享用本港生猛海鮮邊賞海景）。</div>
                 </div>
               </div>
 
@@ -607,7 +816,6 @@
                   南澳島最夢幻的「粉紅條紋雙子燈塔」，孤傲矗立於陡峭海蝕懸崖之上，被旅人暱稱為「冰淇淋燈塔」。隨後前往青澳灣黃金沙灘，打卡北回歸線標誌性雕塑「自然之門」。
                 </p>
 
-                <!-- 導航卡 -->
                 <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-xs space-y-2.5 mb-6">
                   <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-diamond-turn-right text-red-500 mr-2"></i>交通與拍攝實戰卡：</div>
                   <div><strong class="text-slate-700">🧭 導航關鍵字：</strong>導航「三囱崖燈塔觀景台」，車輛停於路旁觀景停車帶。</div>
@@ -625,7 +833,7 @@
               </div>
             </div>
 
-            <!-- 點 4: 澄海獅頭鵝跨年夜盛宴 -->
+            <!-- 點 4: 澄海獅頭鵝跨年宴與老饕備選名單 -->
             <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200/80 flex flex-col justify-between">
               <div>
                 <div class="flex items-center justify-between mb-4">
@@ -638,17 +846,17 @@
                     實景識別：特級澄海獅頭鵝滷鵝肉・極品粉肝・特調蒜泥白醋
                   </div>
                 </div>
-                <h4 class="text-xl font-bold font-serif text-slate-900 mb-2">澄海獅頭鵝跨年旗艦宴【東興飯店 / 潮福苑】</h4>
+                <h4 class="text-xl font-bold font-serif text-slate-900 mb-2">澄海獅頭鵝跨年旗艦宴【東興飯店 / 日日香】</h4>
                 <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                  返回汕頭市區享用跨年大餐！澄海獅頭鵝是世界體型最大鵝王，以二十味南洋香料老滷汁慢火慢浸。肥厚粉肝入口如冰淇淋融化，特級鵝肉軟嫩多汁，佐以靈魂「蒜泥白醋」解膩生香。
+                  返回汕頭市區享用跨年大餐！澄海獅頭鵝以老滷汁慢火浸煮，粉肝入口如冰淇淋融化，特級鵝肉軟嫩多汁，佐以靈魂蒜泥白醋。
                 </p>
 
-                <!-- 導航卡 -->
                 <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-xs space-y-2.5 mb-6">
-                  <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-diamond-turn-right text-red-500 mr-2"></i>跨年點餐黃金清單：</div>
-                  <div><strong class="text-slate-700">🦆 必點品項：</strong>滷水獅頭鵝「八珍拼盤」（鵝肉、特級粉肝、鵝掌、鵝翼、鵝胗、鵝腸、鵝血、滷豆腐）。</div>
-                  <div><strong class="text-slate-700">👑 老饕尊享：</strong>若預算充裕可提前預訂限量「獅頭鵝鵝頭鵝頸」，膠質豐厚，齒頰留香。</div>
-                  <div><strong class="text-slate-700">🎉 跨年迎新：</strong>餐後漫步汕頭海濱長廊或時代廣場萬象城，在海風與璀璨燈火中舉杯倒數迎接 2026！</div>
+                  <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-drumstick-bite text-amber-600 mr-2"></i>大眾點評獅頭鵝名店全矩陣：</div>
+                  <div><strong class="text-slate-700">👑 首選私房：</strong>【東興飯店】（金平區老店，老鵝頭、特級粉肝、鵝肉八珍拼盤天花板）。</div>
+                  <div><strong class="text-slate-700">🥈 備選 1 (黑珍珠必吃榜)：</strong>【日日香鵝肉飯店】（萬象城店 / 澄海總店，首創「熱滷」現斬現賣，滷汁清香不油膩）。</div>
+                  <div><strong class="text-slate-700">🥉 備選 2 (50年傳奇)：</strong>【春梅里滷鵝】（中山路老字號，老汕頭人集體記憶，特級老滷鵝掌翼）。</div>
+                  <div><strong class="text-slate-700">🏅 備選 3 (老饕私藏)：</strong>【鷗汀老山滷鵝】或【潮福苑】（非遺古法滷水，鵝肉細膩入味）。</div>
                 </div>
               </div>
 
@@ -673,7 +881,7 @@
             </div>
             <div>
               <div class="text-xs font-bold text-teal-600 tracking-wider uppercase">01月01日 週四・元旦迎新・移師名城・古剎名僧・一江兩岸光影</div>
-              <h3 class="text-2xl sm:text-3xl font-black font-serif text-slate-900">移師潮州古城 ✕ 開元寺祈福 ✕ 廣濟橋夜間光影秀</h3>
+              <h3 class="text-2xl sm:text-3xl font-black font-serif text-slate-900">移師潮州古城 ✕ 開元寺祈福 ✕ 廣濟橋夜間光影秀 ✕ 西馬路古街</h3>
             </div>
           </div>
 
@@ -691,7 +899,6 @@
                   元旦晨間退房，專車順向移師潮州市區（車程僅 45 分鐘）。下榻於古城核心「載陽府」，此處為保存完好的清代潮式「駟馬拖車」豪宅，木雕彩繪古色古香，下樓即抵牌坊街與廣濟樓。
                 </p>
 
-                <!-- 導航卡 -->
                 <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-xs space-y-2.5 mb-6">
                   <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-diamond-turn-right text-red-500 mr-2"></i>交通與動線提示卡：</div>
                   <div><strong class="text-slate-700">🚗 專車停靠點：</strong>古城內禁行機動車，專車抵達牌坊街南門（南橋市場旁），客棧管家提供電瓶車接駁行李。</div>
@@ -709,7 +916,7 @@
               </div>
             </div>
 
-            <!-- 點 2: 鎮記牛雜店午餐 -->
+            <!-- 點 2: 鎮記牛雜店午餐與老饕備選 -->
             <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200/80 flex flex-col justify-between">
               <div>
                 <div class="flex items-center justify-between mb-4">
@@ -718,15 +925,15 @@
                 </div>
                 <h4 class="text-xl font-bold font-serif text-slate-900 mb-2">鎮記老尾牛雜店 (西湖總店)</h4>
                 <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                  潮州人心目中的牛雜天花板！大鍋中滾燙的牛骨清湯，汆燙牛肚、牛筋、牛百葉、牛心與嫩牛肉，鋪在爽滑的潮汕特產「手工切粿條」上，撒上一勺靈魂南薑末，湯頭香濃醇厚。
+                  潮州人心目中的牛雜天花板！大鍋中滾燙的牛骨清湯，汆燙牛肚、牛筋、牛百葉、牛心與嫩牛肉，鋪在爽滑的手工切粿條上，撒上一勺靈魂南薑末，湯頭香濃醇厚。
                 </p>
 
-                <!-- 導航卡 -->
                 <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-xs space-y-2.5 mb-6">
-                  <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-diamond-turn-right text-red-500 mr-2"></i>交通與點餐實戰：</div>
-                  <div><strong class="text-slate-700">📍 精確地址：</strong>湘橋區環城西路（潮州西湖公園斜對面，認明黃底紅字「鎮記老尾牛雜」牌匾）。</div>
-                  <div><strong class="text-slate-700">🍜 必點招牌：</strong>牛雜粿條（大碗 40 RMB，料多到蓋不住粿條）、生滾鮮牛肉丸湯。</div>
-                  <div><strong class="text-slate-700">💡 避峰提示：</strong>中午 12:00 排隊人潮洶湧，可由牌坊街步行或搭乘電瓶車提早於 11:45 到達。</div>
+                  <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-bowl-food text-red-500 mr-2"></i>潮州牛雜粿條備選群：</div>
+                  <div><strong class="text-slate-700">👑 首選西湖總店：</strong>【鎮記老尾牛雜店】（湘橋區環城西路，西湖公園斜對面）。</div>
+                  <div><strong class="text-slate-700">🥈 備選 1 (同門兄弟)：</strong>【鎮記牛雜店 (下東平路店)】（牌坊街內，若西湖店大排長龍可就近切換）。</div>
+                  <div><strong class="text-slate-700">🥉 備選 2 (老街口碑)：</strong>【老洪牛雜】（南春路老字號，湯清味醇，牛雜滷得軟爛入味）。</div>
+                  <div><strong class="text-slate-700">🏅 備選 3 (特色腸粉)：</strong>【雙生腸粉】或【金新腸粉】（加芝麻醬與花生醬的潮州傳統腸粉）。</div>
                 </div>
               </div>
 
@@ -752,17 +959,16 @@
                     實景識別：粵東第一古剎開元寺大雄寶殿與唐代石經幢
                   </div>
                 </div>
-                <h4 class="text-xl font-bold font-serif text-slate-900 mb-2">開元鎮國禪寺 ➔ 甲第巷潮式大夫第</h4>
+                <h4 class="text-xl font-bold font-serif text-slate-900 mb-2">開元鎮國禪寺 ➔ 甲第巷 ➔ 西馬路漫行</h4>
                 <p class="text-sm text-slate-600 mb-6 leading-relaxed">
-                  始建於唐開元二十六年（西元 738 年），被譽為「粵東第一古剎」。元旦走進這座保留唐代梁架、宋代石欄、明代香爐與清代金漆木雕的清淨佛剎，祈求新年安康。隨後慢步甲第巷，欣賞潮商望族的嵌瓷與彩繪。
+                  始建於唐開元二十六年（西元 738 年），被譽為「粵東第一古剎」。元旦走進這座保留唐代梁架的清淨佛剎祈求新年安康。隨後慢步甲第巷與西馬路，欣賞嵌瓷與傳統手作春餅。
                 </p>
 
-                <!-- 導航卡 -->
                 <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-xs space-y-2.5 mb-6">
                   <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-diamond-turn-right text-red-500 mr-2"></i>交通與實戰辨識卡：</div>
                   <div><strong class="text-slate-700">🧭 步行動線：</strong>從牌坊街中段轉入開元路即達山門。</div>
-                  <div><strong class="text-slate-700">🪧 現場路牌核對：</strong>認明東西向深藍路牌 <span class="road-sign-ew px-2 py-0.5 rounded text-[10px]">開元路 KAIYUAN RD.</span>。</div>
-                  <div><strong class="text-slate-700">🌿 風土亮點：</strong>寺內兩株千年重陽木與菩提古樹，大雄寶殿前兩座唐代陀羅尼經幢為國寶級文物。</div>
+                  <div><strong class="text-slate-700">🪧 現場路牌核對：</strong>認明東西向深藍路牌 <span class="road-sign-ew px-2 py-0.5 rounded text-[10px]">開元路 KAIYUAN RD.</span> 與 <span class="road-sign-ew px-2 py-0.5 rounded text-[10px]">西馬路 XIMA RD.</span>。</div>
+                  <div><strong class="text-slate-700">🥟 西馬路必買小點：</strong>【厚記潮州手作春餅】（現炸香酥脆皮）、【老牌筍粿】。</div>
                 </div>
               </div>
 
@@ -775,7 +981,7 @@
               </div>
             </div>
 
-            <!-- 點 4: 廣濟橋全息光影水幕夜景秀 -->
+            <!-- 點 4: 廣濟橋全息光影水幕夜景秀與砂鍋粥備選 -->
             <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200/80 flex flex-col justify-between">
               <div>
                 <div class="flex items-center justify-between mb-4">
@@ -783,27 +989,27 @@
                   <span class="text-xs text-indigo-600 font-bold font-sans">一江兩岸光影盛典</span>
                 </div>
                 <div class="relative h-48 rounded-2xl overflow-hidden mb-4 bg-slate-200">
-                  <img src="./images/guangji-bridge.jpg" alt="廣濟橋與韓江風光" class="w-full h-full object-cover">
+                  <img src="./images/guangji-night.jpg" alt="廣濟橋光影夜景" class="w-full h-full object-cover">
                   <div class="absolute bottom-2 left-2 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded text-[11px] text-white">
-                    實景識別：廣濟橋古樓閣群與夜間韓江璀璨光影
+                    實景識別：廣濟橋夜間全息雷射與韓江水幕璀璨光影
                   </div>
                 </div>
-                <h4 class="text-xl font-bold font-serif text-slate-900 mb-2">廣濟門城樓 ➔ 廣濟橋一江兩岸光影秀</h4>
+                <h4 class="text-xl font-bold font-serif text-slate-900 mb-2">廣濟門城樓 ➔ 廣濟橋夜間光影秀 ➔ 砂鍋粥</h4>
                 <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                  廣濟橋夜間震撼變身！全息雷射、音樂噴泉與燈光投射於湘子橋樓閣、城牆與韓江水幕之上，結合潮州大鑼鼓與名曲《鳳求凰》、《潮州人》，流光溢彩，是元旦不可錯過的視覺盛宴。
+                  廣濟橋夜間震撼變身！全息雷射與音樂投射於樓閣城牆之上。餐後享用滾燙生滾紅膏蟹蝦粥，暖身治癒。
                 </p>
 
-                <!-- 導航卡 -->
                 <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-xs space-y-2.5 mb-6">
-                  <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-diamond-turn-right text-red-500 mr-2"></i>觀賞實戰指南：</div>
-                  <div><strong class="text-slate-700">🕒 演出場次：</strong>每晚固定兩場：第 1 場 20:00 - 20:16、第 2 場 21:00 - 21:16（每場約 16 分鐘）。</div>
-                  <div><strong class="text-slate-700">📍 最佳免費觀景點：</strong>廣濟門城樓前江濱長廊觀景台，或沿韓江防汛堤漫步，正對浮橋全景。</div>
-                  <div><strong class="text-slate-700">🍲 宵夜首選：</strong>看完燈光秀穿回牌坊街，享用<strong>【阿榮砂鍋粥】</strong>膏蟹明蝦粥配滷水掌翼！</div>
+                  <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-fire text-amber-500 mr-2"></i>潮州砂鍋粥老饕備選名單：</div>
+                  <div><strong class="text-slate-700">👑 首選名店：</strong>【阿榮砂鍋粥】（南堤路老店，生滾膏蟹蝦粥，米粒晶瑩黏稠）。</div>
+                  <div><strong class="text-slate-700">🥈 備選 1 (江邊老字號)：</strong>【潮鎮老尾砂鍋粥】（濱江長廊旁，黃鱔膏蟹粥，配滷鵝掌翼）。</div>
+                  <div><strong class="text-slate-700">🥉 備選 2 (在地口碑)：</strong>【如意鳥砂鍋粥】（現撈海鮮下鍋，珍珠米現煲，鮮美入魂）。</div>
+                  <div><strong class="text-slate-700">🕒 演出時間：</strong>每晚 20:00 - 20:16、21:00 - 21:16 固定兩場（免費觀賞）。</div>
                 </div>
               </div>
 
               <div class="flex items-center justify-between pt-4 border-t border-slate-100">
-                <span class="text-xs text-indigo-600 font-bold"><i class="fa-solid fa-wand-magic-sparkles mr-1"></i> 免費觀賞・建議提前 15 分鐘就位</span>
+                <span class="text-xs text-indigo-600 font-bold"><i class="fa-solid fa-wand-magic-sparkles mr-1"></i> 濱江長廊最佳觀景位</span>
                 <a href="https://www.google.com/maps/search/?api=1&query=Guangji+Tower+Chaozhou" target="_blank" class="inline-flex items-center space-x-1.5 text-xs font-bold text-blue-600 hover:text-blue-800 transition">
                   <i class="fa-solid fa-location-dot"></i>
                   <span>一鍵 Google 地圖導航</span>
@@ -823,7 +1029,7 @@
             </div>
             <div>
               <div class="text-xs font-bold text-purple-600 tracking-wider uppercase">01月02日 週五・國寶奇觀・韓公千秋・非遺名匠・二十二坊走讀</div>
-              <h3 class="text-2xl sm:text-3xl font-black font-serif text-slate-900">十八梭船廿四洲 ✕ 韓文公祠 ✕ 牌坊街深度走讀</h3>
+              <h3 class="text-2xl sm:text-3xl font-black font-serif text-slate-900">十八梭船廿四洲 ✕ 韓文公祠 ✕ 牌坊街走讀 ✕ 甜湯老字號</h3>
             </div>
           </div>
 
@@ -836,18 +1042,23 @@
                   <span class="px-3 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800">09:00 - 11:30｜世界奇蹟</span>
                   <span class="text-xs text-slate-400 font-sans">中國四大古橋之一</span>
                 </div>
+                <div class="relative h-48 rounded-2xl overflow-hidden mb-4 bg-slate-200">
+                  <img src="./images/guangji-bridge.jpg" alt="廣濟橋白天浮橋" class="w-full h-full object-cover">
+                  <div class="absolute bottom-2 left-2 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded text-[11px] text-white">
+                    實景識別：廣濟橋白天梭船相連浮梁橋與廿四亭台樓閣
+                  </div>
+                </div>
                 <h4 class="text-xl font-bold font-serif text-slate-900 mb-2">廣濟橋（湘子橋・白天深度登橋）</h4>
                 <p class="text-sm text-slate-600 mb-6 leading-relaxed">
                   世界最早的啟閉式浮梁橋！宋代始建，全橋橫跨韓江，「十八梭船廿四洲，廿四樓台廿四樣」。中間由 18 艘木梭船相連為浮橋，上午 09:00 梭船合龍成橋讓行人通行，下午解纜通航。
                 </p>
 
-                <!-- 導航卡 -->
                 <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-xs space-y-2.5 mb-6">
-                  <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-diamond-turn-right text-red-500 mr-2"></i>參觀與非遺亮點：</div>
-                  <div><strong class="text-slate-700">🕒 開放時間：</strong>09:00 - 17:00（16:30 停止入場）。</div>
-                  <div><strong class="text-slate-700">🎫 門票指引：</strong>全票 20 RMB，可提前於微信小程式「潮州廣濟橋文旅」購票，掃碼秒過閘。</div>
-                  <div><strong class="text-slate-700">🏛️ 橋上非遺展演：</strong>橋上 24 座古亭內設有非遺傳承人現場展示「潮繡」、「手拉朱泥壺」與「潮州木雕」。</div>
-                  <div><strong class="text-slate-700">🐂 必訪文物：</strong>橋墩上的鉎牛雕塑，即潮州名諺「廿四隻豬仔一隻牛」之神蹟原型。</div>
+                  <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-diamond-turn-right text-red-500 mr-2"></i>參觀與午餐備選：</div>
+                  <div><strong class="text-slate-700">🕒 開放時間：</strong>09:00 - 17:00（門票 20 RMB，持台胞證掃碼直接入場）。</div>
+                  <div><strong class="text-slate-700">🥩 午餐首選：</strong>【阿彬牛肉火鍋 (古城東門店)】（廣濟門城樓下，現切手打牛肉丸）。</div>
+                  <div><strong class="text-slate-700">🥈 午餐備選 1 (黑珍珠江景)：</strong>【韓上樓】（韓江東岸，精緻江景早茶與傳統名菜）。</div>
+                  <div><strong class="text-slate-700">🥉 午餐備選 2 (古厝私房)：</strong>【潮府館】（開元寺旁老宅，古法潮菜）。</div>
                 </div>
               </div>
 
@@ -867,16 +1078,21 @@
                   <span class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">12:00 - 14:00｜文脈千秋</span>
                   <span class="text-xs text-slate-400 font-sans">一片江山盡姓韓</span>
                 </div>
+                <div class="relative h-48 rounded-2xl overflow-hidden mb-4 bg-slate-200">
+                  <img src="./images/han-shrine.jpg" alt="潮州韓文公祠侍郎閣" class="w-full h-full object-cover">
+                  <div class="absolute bottom-2 left-2 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded text-[11px] text-white">
+                    實景識別：筆架山麓韓文公祠侍郎閣與俯瞰韓江城景
+                  </div>
+                </div>
                 <h4 class="text-xl font-bold font-serif text-slate-900 mb-2">韓文公祠 (韓愈紀念祠)</h4>
                 <p class="text-sm text-slate-600 mb-4 leading-relaxed">
                   穿過廣濟橋即達韓江東岸筆架山麓。唐代大文豪韓愈刺潮八月，驅鱷除害、興修水利、倡導文教，贏得「江山改姓」千古美譽。祠內古柏森森，蘇軾名篇《潮州韓文公廟碑》碑刻立於殿側。
                 </p>
 
-                <!-- 導航卡 -->
                 <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-xs space-y-2.5 mb-6">
                   <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-diamond-turn-right text-red-500 mr-2"></i>交通與遊覽須知：</div>
                   <div><strong class="text-slate-700">🧭 順路動線：</strong>廣濟橋東端出口直接串聯韓文公祠正門，零折返。</div>
-                  <div><strong class="text-slate-700">🎫 門票規定：</strong>免費開放（需出示微信健康預約或身分證件登記）。</div>
+                  <div><strong class="text-slate-700">🎫 門票規定：</strong>免費開放（需出示微信預約或身分證件登記）。</div>
                   <div><strong class="text-slate-700">📸 景觀制高點：</strong>登上正殿後方侍郎閣，可俯瞰韓江東流與潮州古城城牆全貌，視野極為開闊。</div>
                 </div>
               </div>
@@ -890,7 +1106,7 @@
               </div>
             </div>
 
-            <!-- 點 3: 牌坊街 22 座石牌坊走讀與胡榮泉下午茶 -->
+            <!-- 點 3: 牌坊街 22 座石牌坊走讀與胡榮泉甜品備選 -->
             <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200/80 flex flex-col justify-between">
               <div>
                 <div class="flex items-center justify-between mb-4">
@@ -903,16 +1119,17 @@
                     實景識別：牌坊街明清石牌坊群與兩側南洋風騎樓商號
                   </div>
                 </div>
-                <h4 class="text-xl font-bold font-serif text-slate-900 mb-2">牌坊街深度走讀 ➔ 百年老字號【胡榮泉】</h4>
+                <h4 class="text-xl font-bold font-serif text-slate-900 mb-2">牌坊街走讀 ➔ 【胡榮泉】老字號下午茶</h4>
                 <p class="text-sm text-slate-600 mb-6 leading-relaxed">
-                  全長 1.9 公里的太平路上整齊排列著 22 座明清功名石牌坊，如「四朝大老坊」、「狀元坊」、「文宗方伯坊」。下午於百年名店胡榮泉享用傳統甜品，感受古城獨有的悠長甘味。
+                  全長 1.9 公里的太平路上整齊排列著 22 座明清功名石牌坊。下午走進百年名店胡榮泉享用傳統甜品，感受古城獨有的悠長甘味。
                 </p>
 
-                <!-- 導航卡 -->
                 <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-xs space-y-2.5 mb-6">
-                  <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-diamond-turn-right text-red-500 mr-2"></i>美食品鑑指南：</div>
-                  <div><strong class="text-slate-700">🍧 胡榮泉必點：</strong>招牌「鴨母撚」（包有綠豆沙與芋泥的軟糯湯圓，配銀耳枸杞清湯）、現炸脆香「春餅」、金黃甘香「腐乳餅」。</div>
-                  <div><strong class="text-slate-700">🍵 工夫茶歇：</strong>轉入載陽茶館，點一壺產自鳳凰山海拔千米烏崠頂的「鴨屎香單樅」，靜聽古箏潮樂。</div>
+                  <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-cookie text-amber-600 mr-2"></i>古城甜品小點老饕備選名單：</div>
+                  <div><strong class="text-slate-700">👑 百年首選：</strong>【胡榮泉 (太平路牌坊街總店)】（必點招牌鴨母撚、酥脆春餅、腐乳餅）。</div>
+                  <div><strong class="text-slate-700">🥈 備選 1 (純手工甜湯)：</strong>【兵房老牌鴨母撚】（西門古街，古法糖水，甜而不膩）。</div>
+                  <div><strong class="text-slate-700">🥉 備選 2 (百年石磨)：</strong>【謝懷亮芝麻茶】（文宗方伯坊旁，香濃現磨黑芝麻糊雙拼杏仁糊）。</div>
+                  <div><strong class="text-slate-700">🏅 備選 3 (古法草粿)：</strong>【老街甜品・草粿海石花】（現刮海石花、草粿撒紅糖粉）。</div>
                 </div>
               </div>
 
@@ -937,7 +1154,6 @@
                   精緻呈現傳統潮州大菜！享用金黃脆皮普寧豆腐、酸菜炆鱔魚、白灼響螺，以及令人欲罷不能的「生醃膏蟹」與「生醃皮皮蝦」，蟹黃紅亮如冰淇淋，肉質細嫩彈牙。
                 </p>
 
-                <!-- 導航卡 -->
                 <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-xs space-y-2.5 mb-6">
                   <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-diamond-turn-right text-red-500 mr-2"></i>生醃老饕安全品嚐手冊：</div>
                   <div><strong class="text-slate-700">🦀 推薦品項：</strong>生醃三目蟹、生醃大蝦、生醃血蚶（淋上蒜蓉辣椒白酒醋，鮮美無比）。</div>
@@ -984,7 +1200,6 @@
                   潮州人的晨間儀式！剛煮好熱氣騰騰的白糯「粿皮」浸入米漿中，淋上一勺焦香滷汁，鋪上滷五花肉、滷豬腸、滷蛋與酥脆油炸蒜頭油，暖胃又飽足。
                 </p>
 
-                <!-- 導航卡 -->
                 <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-xs space-y-2.5 mb-6">
                   <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-diamond-turn-right text-red-500 mr-2"></i>在地老饕指引：</div>
                   <div><strong class="text-slate-700">📍 名店推薦：</strong>【開元老牌粿汁】（開元路與義安路口附近，認明騎樓排隊小攤）。</div>
@@ -1019,7 +1234,6 @@
                   在返程前為家人朋友採集地道滋味。精選鳳凰高山正宗「鴨屎香」與「蜜蘭香」單樅茶，搭配養胃健脾的「潮州老香黃（佛手柑）」與「胡榮泉腐乳餅」，滿載非遺匠心。
                 </p>
 
-                <!-- 導航卡 -->
                 <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-xs space-y-2.5 mb-6">
                   <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-basket-shopping text-red-500 mr-2"></i>伴手禮避坑清單：</div>
                   <div><strong class="text-slate-700">🍵 鳳凰單樅茶：</strong>認明「烏崠山/大庵村」春茶或冬仔茶，先試泡再買，茶湯清透金黃、花香回甘持久。</div>
@@ -1049,7 +1263,6 @@
                   專車由客棧直達高鐵「潮汕站」（約 30 分鐘）。搭乘午後廈深高鐵動車（約 1 小時 25 分）抵達「廈門北站」，換乘地鐵或計程車無縫前往「廈門高崎機場 (XMN)」。
                 </p>
 
-                <!-- 導航卡 -->
                 <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-xs space-y-2.5 mb-6">
                   <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-train-subway text-red-500 mr-2"></i>高鐵退稅與換乘關鍵：</div>
                   <div><strong class="text-slate-700">🎫 證件通道：</strong>台胞證無須取紙質票，於「人工核驗閘機」或「台胞證專用刷卡口」感應晶片即可過閘進站。</div>
@@ -1078,7 +1291,6 @@
                   搭乘直航班機返回台灣（飛行僅 90 分鐘）。告別潮汕的紅頭船、跨海大橋、古樓夜色與人間煙火，滿載五天四夜的極致味覺與心靈感動回到溫暖的家！
                 </p>
 
-                <!-- 導航卡 -->
                 <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-xs space-y-2.5 mb-6">
                   <div class="font-bold text-slate-700 flex items-center"><i class="fa-solid fa-plane-arrival text-green-600 mr-2"></i>返台提醒卡：</div>
                   <div><strong class="text-slate-700">🛃 檢疫規定：</strong>切勿攜帶含肉類製品（如生熟鵝肉、未經核可牛肉製品）返台，真空茶葉與糕餅可正常申報入境。</div>
@@ -1097,6 +1309,229 @@
           </div>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- 大眾點評老饕備選名店全庫 (Dianping Backup Bible) -->
+  <section id="dianping-backups" class="py-20 bg-slate-900 text-white border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-red-900/60 border border-red-500/50 text-red-300 text-xs font-bold mb-3">
+          <i class="fa-solid fa-fire text-red-400"></i>
+          <span>DIANPING VERIFIED ALTERNATIVES</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-black font-serif text-amber-400">大眾點評必吃榜 ✕ 黑珍珠老饕備選全庫</h2>
+        <p class="mt-3 text-slate-400 max-w-2xl mx-auto">
+          依據中國大陸大眾點評最新即時數據，為您建立六大核心美食的超強備援名單。遇到排隊超過 30 分鐘，現場立即秒速切換！
+        </p>
+      </div>
+
+      <!-- 分類矩陣表格 -->
+      <div class="space-y-8">
+        <!-- 1. 牛肉火鍋神仙打架榜 -->
+        <div class="bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur-sm">
+          <div class="flex items-center space-x-3 mb-4">
+            <span class="w-3 h-3 rounded-full bg-red-500"></span>
+            <h4 class="text-xl font-bold font-serif text-red-400">1. 潮汕鮮牛肉火鍋・神級名店與必吃榜備選</h4>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs text-slate-300">
+              <thead class="bg-white/10 text-amber-300 uppercase">
+                <tr>
+                  <th class="py-2.5 px-3">梯隊地位</th>
+                  <th class="py-2.5 px-3">餐廳名稱</th>
+                  <th class="py-2.5 px-3">大眾點評標籤 / 均價</th>
+                  <th class="py-2.5 px-3">精確地址門牌</th>
+                  <th class="py-2.5 px-3">必點極品部位與避峰訣竅</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-white/5">
+                <tr class="hover:bg-white/5">
+                  <td class="py-2.5 px-3 text-red-400 font-bold">👑 首選旗艦</td>
+                  <td class="py-2.5 px-3 font-bold text-white">八合里海記牛肉 (黃崗總店)</td>
+                  <td class="py-2.5 px-3"><span class="bg-red-950 text-red-300 px-1.5 py-0.5 rounded border border-red-700">必吃榜</span> 80-100 RMB</td>
+                  <td class="py-2.5 px-3">金平區黃崗路與坪廷東巷路口</td>
+                  <td class="py-2.5 px-3">五花趾、匙柄、胸口朥；下午 16:30 線上開號即取。</td>
+                </tr>
+                <tr class="hover:bg-white/5">
+                  <td class="py-2.5 px-3 text-amber-400 font-bold">🥈 備選 1 (口碑王)</td>
+                  <td class="py-2.5 px-3 font-bold text-white">杏花吳記牛肉火鍋</td>
+                  <td class="py-2.5 px-3"><span class="bg-amber-950 text-amber-300 px-1.5 py-0.5 rounded border border-amber-700">必吃榜第一</span> 90-110 RMB</td>
+                  <td class="py-2.5 px-3">金平區杏花西路16號</td>
+                  <td class="py-2.5 px-3">現宰第一梯隊，肉質極為鮮美！建議上午 11:00 或下午 16:45 現場搶位。</td>
+                </tr>
+                <tr class="hover:bg-white/5">
+                  <td class="py-2.5 px-3 text-emerald-400 font-bold">🥉 備選 2 (老字號)</td>
+                  <td class="py-2.5 px-3 font-bold text-white">福合埕牛肉丸 (金平老店)</td>
+                  <td class="py-2.5 px-3"><span class="bg-emerald-950 text-emerald-300 px-1.5 py-0.5 rounded border border-emerald-700">百年傳承</span> 60-80 RMB</td>
+                  <td class="py-2.5 px-3">金平區福平路21號</td>
+                  <td class="py-2.5 px-3">生打牛肉丸、牛腩粿條，在地人最喜愛的老派風味。</td>
+                </tr>
+                <tr class="hover:bg-white/5">
+                  <td class="py-2.5 px-3 text-sky-400 font-bold">🏅 備選 3 (刀工細)</td>
+                  <td class="py-2.5 px-3 font-bold text-white">陳記順和牛肉火鍋 (韓江路店)</td>
+                  <td class="py-2.5 px-3"><span class="bg-sky-950 text-sky-300 px-1.5 py-0.5 rounded border border-sky-700">連鎖名店</span> 85-105 RMB</td>
+                  <td class="py-2.5 px-3">龍湖區韓江路錦泰花園</td>
+                  <td class="py-2.5 px-3">三花趾、吊龍，肉片厚薄勻稱，環境寬敞免排長龍。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 2. 澄海獅頭鵝名廚榜 -->
+        <div class="bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur-sm">
+          <div class="flex items-center space-x-3 mb-4">
+            <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+            <h4 class="text-xl font-bold font-serif text-amber-400">2. 澄海獅頭鵝・世界鵝王滷味備選矩陣</h4>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs text-slate-300">
+              <thead class="bg-white/10 text-amber-300 uppercase">
+                <tr>
+                  <th class="py-2.5 px-3">梯隊地位</th>
+                  <th class="py-2.5 px-3">餐廳名稱</th>
+                  <th class="py-2.5 px-3">大眾點評標籤 / 均價</th>
+                  <th class="py-2.5 px-3">精確地址門牌</th>
+                  <th class="py-2.5 px-3">招牌特色與必點</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-white/5">
+                <tr class="hover:bg-white/5">
+                  <td class="py-2.5 px-3 text-red-400 font-bold">👑 首選私房</td>
+                  <td class="py-2.5 px-3 font-bold text-white">東興飯店 (汕頭老店)</td>
+                  <td class="py-2.5 px-3"><span class="bg-red-950 text-red-300 px-1.5 py-0.5 rounded border border-red-700">黑珍珠候選</span> 120-160 RMB</td>
+                  <td class="py-2.5 px-3">金平區新石小區3幢</td>
+                  <td class="py-2.5 px-3">特級老鵝頭鵝脖、滷水八珍拼盤，潮菜私房大菜。</td>
+                </tr>
+                <tr class="hover:bg-white/5">
+                  <td class="py-2.5 px-3 text-amber-400 font-bold">🥈 備選 1 (熱滷首創)</td>
+                  <td class="py-2.5 px-3 font-bold text-white">日日香鵝肉飯店 (萬象城店)</td>
+                  <td class="py-2.5 px-3"><span class="bg-amber-950 text-amber-300 px-1.5 py-0.5 rounded border border-amber-700">必吃榜</span> 80-120 RMB</td>
+                  <td class="py-2.5 px-3">龍湖區金砂東路萬象城 5 樓</td>
+                  <td class="py-2.5 px-3">首創現滷現撈，熱騰騰鵝肉多汁，環境高檔舒適。</td>
+                </tr>
+                <tr class="hover:bg-white/5">
+                  <td class="py-2.5 px-3 text-emerald-400 font-bold">🥉 備選 2 (50年傳奇)</td>
+                  <td class="py-2.5 px-3 font-bold text-white">春梅里滷鵝 (中山路老店)</td>
+                  <td class="py-2.5 px-3"><span class="bg-emerald-950 text-emerald-300 px-1.5 py-0.5 rounded border border-emerald-700">金牌老字號</span> 50-80 RMB</td>
+                  <td class="py-2.5 px-3">金平區中山路71號</td>
+                  <td class="py-2.5 px-3">滷水汁浸潤半世紀，特級鵝肉、鵝掌、鵝肝斬盤外帶。</td>
+                </tr>
+                <tr class="hover:bg-white/5">
+                  <td class="py-2.5 px-3 text-sky-400 font-bold">🏅 備選 3 (非遺技藝)</td>
+                  <td class="py-2.5 px-3 font-bold text-white">鷗汀老山滷鵝</td>
+                  <td class="py-2.5 px-3"><span class="bg-sky-950 text-sky-300 px-1.5 py-0.5 rounded border border-sky-700">在地私藏</span> 60-90 RMB</td>
+                  <td class="py-2.5 px-3">龍湖區鷗汀老街</td>
+                  <td class="py-2.5 px-3">鷗汀非遺老滷，鵝胗脆口，老滷豆腐吸滿精華。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 3. 生醃打冷與夜粥榜 -->
+        <div class="bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur-sm">
+          <div class="flex items-center space-x-3 mb-4">
+            <span class="w-3 h-3 rounded-full bg-purple-500"></span>
+            <h4 class="text-xl font-bold font-serif text-purple-400">3. 潮式生醃「毒藥」✕ 深夜打冷夜粥備選</h4>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs text-slate-300">
+              <thead class="bg-white/10 text-amber-300 uppercase">
+                <tr>
+                  <th class="py-2.5 px-3">梯隊地位</th>
+                  <th class="py-2.5 px-3">餐廳名稱</th>
+                  <th class="py-2.5 px-3">大眾點評標籤 / 均價</th>
+                  <th class="py-2.5 px-3">精確地址門牌</th>
+                  <th class="py-2.5 px-3">招牌特色與必點</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-white/5">
+                <tr class="hover:bg-white/5">
+                  <td class="py-2.5 px-3 text-red-400 font-bold">👑 首選地道</td>
+                  <td class="py-2.5 px-3 font-bold text-white">長平老姿娘夜粥</td>
+                  <td class="py-2.5 px-3"><span class="bg-red-950 text-red-300 px-1.5 py-0.5 rounded border border-red-700">市井招牌</span> 70-100 RMB</td>
+                  <td class="py-2.5 px-3">金平區長平路26號</td>
+                  <td class="py-2.5 px-3">生醃膏蟹、生醃蝦、魚飯、麻葉、熱滾番薯白粥。</td>
+                </tr>
+                <tr class="hover:bg-white/5">
+                  <td class="py-2.5 px-3 text-amber-400 font-bold">🥈 備選 1 (打冷天花板)</td>
+                  <td class="py-2.5 px-3 font-bold text-white">富苑飲食</td>
+                  <td class="py-2.5 px-3"><span class="bg-amber-950 text-amber-300 px-1.5 py-0.5 rounded border border-amber-700">黑珍珠一鑽</span> 150-200 RMB</td>
+                  <td class="py-2.5 px-3">龍湖區朝陽莊北區14棟</td>
+                  <td class="py-2.5 px-3">數百種潮汕大菜打冷壯觀陳列，隆江豬腳、生醃血蚶。</td>
+                </tr>
+                <tr class="hover:bg-white/5">
+                  <td class="py-2.5 px-3 text-emerald-400 font-bold">🥉 備選 2 (必吃榜神店)</td>
+                  <td class="py-2.5 px-3 font-bold text-white">桂園白粥</td>
+                  <td class="py-2.5 px-3"><span class="bg-emerald-950 text-emerald-300 px-1.5 py-0.5 rounded border border-emerald-700">必吃榜</span> 60-90 RMB</td>
+                  <td class="py-2.5 px-3">金平區長平路桂園28幢</td>
+                  <td class="py-2.5 px-3">性價比極高，生醃皮皮蝦軟嫩爽口，巴浪魚飯鮮甜。</td>
+                </tr>
+                <tr class="hover:bg-white/5">
+                  <td class="py-2.5 px-3 text-sky-400 font-bold">🏅 備選 3 (生醃專門)</td>
+                  <td class="py-2.5 px-3 font-bold text-white">瑞嬌嫲嫲潮汕生醃 (龍眼店)</td>
+                  <td class="py-2.5 px-3"><span class="bg-sky-950 text-sky-300 px-1.5 py-0.5 rounded border border-sky-700">網紅名店</span> 80-120 RMB</td>
+                  <td class="py-2.5 px-3">金平區龍眼南路97號</td>
+                  <td class="py-2.5 px-3">生醃紅膏蟹膏滿肉肥，生醃生蠔鮮滑爽脆。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 4. 潮州古城牛雜與砂鍋粥榜 -->
+        <div class="bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur-sm">
+          <div class="flex items-center space-x-3 mb-4">
+            <span class="w-3 h-3 rounded-full bg-teal-500"></span>
+            <h4 class="text-xl font-bold font-serif text-teal-400">4. 潮州牛雜粿條 ✕ 砂鍋粥 ✕ 老字號甜品備選</h4>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs text-slate-300">
+              <thead class="bg-white/10 text-amber-300 uppercase">
+                <tr>
+                  <th class="py-2.5 px-3">品類</th>
+                  <th class="py-2.5 px-3">首選名店</th>
+                  <th class="py-2.5 px-3">大眾點評必吃備選 A</th>
+                  <th class="py-2.5 px-3">老饕私藏備選 B</th>
+                  <th class="py-2.5 px-3">必吃特色與備選理由</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-white/5">
+                <tr class="hover:bg-white/5">
+                  <td class="py-2.5 px-3 text-white font-bold">牛雜粿條</td>
+                  <td class="py-2.5 px-3 font-bold text-amber-300">鎮記老尾牛雜 (西湖總店)</td>
+                  <td class="py-2.5 px-3">鎮記牛雜 (下東平路店)</td>
+                  <td class="py-2.5 px-3">老洪牛雜 (南春路)</td>
+                  <td class="py-2.5 px-3">西湖總店客滿時，直切牌坊街內下東平路分店，同等美味。</td>
+                </tr>
+                <tr class="hover:bg-white/5">
+                  <td class="py-2.5 px-3 text-white font-bold">海鮮砂鍋粥</td>
+                  <td class="py-2.5 px-3 font-bold text-amber-300">阿榮砂鍋粥 (南堤路)</td>
+                  <td class="py-2.5 px-3">潮鎮老尾砂鍋粥 (濱江長廊)</td>
+                  <td class="py-2.5 px-3">如意鳥砂鍋粥 (城新西路)</td>
+                  <td class="py-2.5 px-3">生滾紅膏蟹蝦粥，珍珠米現熬 25 分鐘，米脂香濃。</td>
+                </tr>
+                <tr class="hover:bg-white/5">
+                  <td class="py-2.5 px-3 text-white font-bold">老字號甜品</td>
+                  <td class="py-2.5 px-3 font-bold text-amber-300">胡榮泉 (牌坊街總店)</td>
+                  <td class="py-2.5 px-3">兵房老牌鴨母撚</td>
+                  <td class="py-2.5 px-3">謝懷亮芝麻茶 (現磨黑芝麻)</td>
+                  <td class="py-2.5 px-3">百年鴨母撚、酥炸春餅、金黃腐乳餅，傳承三代。</td>
+                </tr>
+                <tr class="hover:bg-white/5">
+                  <td class="py-2.5 px-3 text-white font-bold">精緻潮菜早茶</td>
+                  <td class="py-2.5 px-3 font-bold text-amber-300">潮膳樓 (古城私房)</td>
+                  <td class="py-2.5 px-3">韓上樓 (黑珍珠/必吃榜)</td>
+                  <td class="py-2.5 px-3">蓮華素食館 (開元寺旁)</td>
+                  <td class="py-2.5 px-3">韓江東岸韓上樓坐擁無敵江景，精緻茶點與潮式大菜。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -1243,7 +1678,7 @@
               <td class="py-3.5 px-4 text-xs text-slate-300">開放時間 07:00 - 17:00，請著整齊服裝，寺內禁止大聲喧嘩。</td>
             </tr>
             <tr class="hover:bg-white/5 transition">
-              <td class="py-3.5 px-4 font-bold text-white">八合里海記牛肉火鍋 (總店)</td>
+              <td class="py-3.5 px-4 font-bold text-white">八合里海記 / 杏花吳記牛肉火鍋</td>
               <td class="py-3.5 px-4 text-red-400 font-bold">極熱門・當日線上取號</td>
               <td class="py-3.5 px-4"><span class="bg-white/10 px-2 py-0.5 rounded text-xs">大眾點評 App / 微信小程式</span></td>
               <td class="py-3.5 px-4 text-xs text-slate-300">晚餐建議於 16:30 開放線上排號時即刻取號，過號需順延 3 桌。</td>
